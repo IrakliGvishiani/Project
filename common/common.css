@@ -1,0 +1,474 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-bottom: 200px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 120px;
+  padding: 0px 70px;
+  background-color: white;
+  display: flex;
+  z-index: 200;
+}
+header div {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  height: 100%;
+}
+header .hdr1 {
+  gap: 10px;
+}
+header .hdr1 svg {
+  margin-top: -15px;
+}
+header .hdr1 p {
+  font-weight: bold;
+  color: #0732EF;
+  font-size: 23px;
+}
+header .hdr2 {
+  justify-content: end;
+}
+header .hdr2 nav ul {
+  display: flex;
+  gap: 30px;
+  color: #0732EF;
+  font-size: 21px;
+}
+header .hdr2 nav ul .hdr-log:hover {
+  opacity: 0.7 !important;
+  cursor: pointer;
+}
+header .hdr2 nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+header .hdr2 nav ul li i {
+  font-size: 25px;
+}
+header .hdr2 .check:checked + label > .lineDiv > .line2 {
+  display: none;
+}
+header .hdr2 .check:checked + label > .lineDiv > .line1 {
+  transform: rotate(45deg) translate(9px);
+  transition: 0.3s;
+}
+header .hdr2 .check:checked + label > .lineDiv > .line3 {
+  transform: rotate(-45deg) translate(9px);
+  transition: 0.3s;
+}
+header .hdr2 .check:checked ~ .navdi {
+  display: flex;
+}
+header .hdr2 .check:checked ~ .navdi > ul {
+  display: flex;
+}
+header .hdr2 .check {
+  display: none;
+}
+header .hdr2 label {
+  display: none;
+  z-index: 5;
+}
+header .hdr2 label .lineDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+header .hdr2 label .lineDiv div {
+  width: 40px;
+  height: 4px;
+  background-color: #0732EF;
+  border-radius: 20px;
+}
+header .hdr2 .navdi {
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 120px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+header .hdr2 .navdi ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
+  color: #0732EF;
+  font-size: 25px;
+}
+header .hdr2 .navdi ul li {
+  color: #0732EF;
+}
+header .hdr2 .navdi ul li:hover {
+  cursor: pointer;
+}
+header .hdr2 .navdi .igdv {
+  display: flex;
+  gap: 5px;
+  height: 30px;
+}
+
+main {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  height: 850px;
+  position: relative;
+  width: 100%;
+}
+main .mainChild2 {
+  position: absolute;
+  right: 100px;
+  z-index: -1;
+  top: 110px;
+}
+main .mainChild1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+main .mainChild1 .butH1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .mainChild1 .butH1 h1 {
+  color: #0732EF;
+  font-size: 75px;
+}
+main .mainChild1 .butH1 button {
+  width: 300px;
+  border: #0732EF solid 0.5px;
+  border-radius: 50px;
+  background-color: white;
+  color: #0732EF;
+  font-size: 20px;
+  padding: 15px 30px;
+  transition: 0.3s ease-in-out;
+}
+main .mainChild1 .butH1 button:hover {
+  color: white;
+  background-color: #0732EF;
+  cursor: pointer;
+}
+main .mainChild1 .mainElementsDiv {
+  display: flex;
+  gap: 20px;
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
+  display: flex;
+  flex-direction: column;
+  border: #0732EF solid 1.5px;
+  border-radius: 30px;
+  gap: 10px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  width: 430px;
+  height: 250px;
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1:hover, main .mainChild1 .mainElementsDiv .elementsDiv2:hover {
+  transform: translateY(-20px);
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1 h3, main .mainChild1 .mainElementsDiv .elementsDiv2 h3 {
+  color: #0732EF;
+  font-size: 23px;
+  padding: 0px 25px;
+  padding-top: 25px !important;
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1 p, main .mainChild1 .mainElementsDiv .elementsDiv2 p {
+  color: #0732EF;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 0px 25px;
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  align-items: center;
+  margin-top: 20px;
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild:hover, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild:hover {
+  background-color: #0732EF;
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild:hover p, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild:hover p {
+  color: white;
+  transition: 0.3s;
+}
+main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild p, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild p {
+  color: #0732EF;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    height: 1400px;
+    padding-top: 10px;
+  }
+  main .mainChild1 {
+    gap: 5px;
+  }
+  main .mainChild1 .mainElementsDiv {
+    padding-top: 200px;
+  }
+  main .mainChild1 .butH1 {
+    margin-top: -50px;
+  }
+  main .mainChild2 {
+    top: 370px;
+    right: 200px;
+    left: 200px;
+  }
+  main .mainChild2 .damtanja {
+    width: 550px;
+    height: 550px;
+  }
+}
+section {
+  width: 100%;
+  height: 750px;
+  background-color: rgb(188, 197, 242);
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+section .sc1maindiv {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 90%;
+  align-items: center;
+}
+section .sc1maindiv .calk {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center !important;
+  max-width: 800px;
+}
+section .sc1maindiv .calk .bigP {
+  color: #0732EF;
+  font-weight: bold !important;
+  font-size: 75px;
+}
+section .sc1maindiv .calk .clk2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .sc1maindiv .calk .clk2 p {
+  color: #0732EF;
+  font-weight: bold;
+  font-size: 22px;
+}
+section .sc1maindiv .calk .clk2 .paragr {
+  font-weight: 200;
+  font-size: 19px;
+  width: 85%;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+section .sc1maindiv .calk button {
+  width: 300px;
+  border: #0732EF solid 0.5px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #0732EF;
+  font-size: 20px;
+  padding: 15px 30px;
+  transition: 0.3s ease-in-out;
+}
+section .sc1maindiv .calk button:hover {
+  color: white;
+  background-color: #0732EF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1140px) {
+  header {
+    padding: 0px 30px;
+  }
+  header .hdr1 {
+    width: 30%;
+  }
+  header .hdr2 {
+    width: 70%;
+  }
+  header .hdr2 nav ul {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1002px) {
+  main {
+    padding-bottom: 0;
+  }
+  section {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  main {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+  main .mainChild1 {
+    padding: 0;
+    align-items: center;
+  }
+  main .mainChild2 {
+    top: 220px;
+    left: 100px;
+  }
+  main .mainChild1 .mainElementsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -200px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
+    width: 550px;
+    height: 300px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 h3, main .mainChild1 .mainElementsDiv .elementsDiv2 h3 {
+    font-size: 33px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 p, main .mainChild1 .mainElementsDiv .elementsDiv2 p {
+    font-size: 25px;
+    width: 100%;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild {
+    height: 100px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild p, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild p {
+    font-size: 25px;
+  }
+  section {
+    margin-top: 30px;
+  }
+  section .sc1maindiv {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  section .sc1maindiv .calk {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 812px) {
+  main .mainChild1 .butH1 h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .hdr2 {
+    padding-right: 50px;
+  }
+  header .hdr2 nav {
+    display: none;
+  }
+  header .hdr2 label {
+    display: flex;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .mainChild2 {
+    top: 350px;
+  }
+  main .mainChild2 .damtanja {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    padding-top: 100px;
+  }
+  main .mainChild2 {
+    top: 300px;
+  }
+  section .sc1maindiv .calk .clk2 .paragr {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
+    width: 400px;
+    height: 250px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 h3, main .mainChild1 .mainElementsDiv .elementsDiv2 h3 {
+    font-size: 20px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 p, main .mainChild1 .mainElementsDiv .elementsDiv2 p {
+    font-size: 19px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild p, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild p {
+    font-size: 19px;
+  }
+  section .sc1maindiv .calk .bigP {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 556px) {
+  main .mainChild2 {
+    top: 400px;
+  }
+}
+@media screen and (max-width: 510px) {
+  main .mainChild2 {
+    top: 400px;
+  }
+  main .mainChild2 .damtanja {
+    width: 330px;
+  }
+  main .mainChild1 .butH1 {
+    gap: 30px;
+  }
+  main .mainChild1 .butH1 h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .mainChild2 {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .mainChild2 {
+    left: 30px;
+    top: 500px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
+    width: 370px;
+    height: 240px;
+  }
+}/*# sourceMappingURL=common.css.map */

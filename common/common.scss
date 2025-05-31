@@ -1,0 +1,624 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none; scroll-behavior: smooth;
+    
+   
+}
+
+body{
+    padding-bottom: 200px;
+   
+}
+
+@mixin mainColorFont {
+    color: #0732EF;
+}
+@mixin mainColorBck{
+    background-color: #0732EF;
+}
+
+header{
+    position: fixed;top: 0;right: 0;left: 0;
+    height: 120px; padding: 0px 70px;background-color: white;
+    display: flex;z-index: 200;
+
+    div{
+        display: flex;;width: 50%;
+        align-items: center;height: 100%;
+    }
+
+    .hdr1{
+        svg{
+            margin-top: -15px;
+        }
+        gap: 10px;;
+        p{
+             font-weight: bold;@include mainColorFont();
+             font-size: 23px;
+        }
+    }
+
+    .hdr2{justify-content: end;
+        nav{
+            ul{
+                display: flex;gap: 30px;
+                @include mainColorFont();
+                font-size: 21px;
+
+                .hdr-log{
+                    &:hover{
+                        opacity: 0.7 !important;
+                        cursor: pointer;
+                    }
+                }
+                li{
+                    &:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    i{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .check:checked + label > .lineDiv > .line2{
+            display: none;
+        }
+        .check:checked + label > .lineDiv > .line1{
+            transform: rotate(45deg) translate(9px);
+            transition: 0.3s;
+        }
+        .check:checked + label > .lineDiv > .line3{
+            transform: rotate(-45deg) translate(9px);
+            transition: 0.3s;
+        }
+        .check:checked ~ .navdi{
+            display: flex;
+        }
+        .check:checked ~ .navdi > ul{
+            display: flex;
+        }
+
+
+
+
+
+        .check{
+             display: none;
+        }
+           
+        
+
+        
+        label{
+            display:  none;z-index: 5;
+
+            .lineDiv{
+                display: flex;flex-direction:column;
+                gap: 8px;
+
+                div{
+                    width: 40px;height: 4px;
+                    @include mainColorBck();border-radius: 20px;
+                }
+            }
+        }
+
+        .navdi{
+            width: 100%;
+            height: 200vh;
+            position: fixed;
+            left: 0;bottom: 0;
+            top: 120px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            display: none;
+
+            ul{
+                    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;display: none;
+    @include mainColorFont();
+    font-size: 25px;
+
+
+    li{ @include mainColorFont();
+        &:hover{
+            cursor: pointer;
+        }
+    }
+            }
+
+
+            .igdv{
+                display: flex;gap: 5px;height: 30px;
+            }
+        }
+    }
+}
+//   HEADER ENDS HERE /////////////////////////
+/////////////////////////////
+/// ///////////////////////
+
+main{
+    display: flex;padding-top: 150px;;padding-bottom: 50px;
+   height: 850px;position: relative;
+  ;width: 100%;
+   
+
+   .mainChild2{
+    position: absolute;right: 100px;z-index: -1;
+    top: 110px;
+   }
+
+    .mainChild1{
+        display: flex;
+        flex-direction: column;gap: 20px;justify-content: space-around;
+        padding-left: 50px;
+        
+
+        .butH1{display: flex;flex-direction: column;
+            gap: 10px;
+
+
+            h1{
+            @include mainColorFont();
+            font-size: 75px;
+            
+        }
+
+        button{
+            width: 300px;
+            border: #0732EF solid 0.5px;
+            border-radius: 50px;background-color: white;
+            @include mainColorFont();font-size: 20px;
+            padding: 15px 30px; transition: 0.3s ease-in-out;
+
+            &:hover{
+                color: white;
+                @include mainColorBck();cursor: pointer;
+               
+            }
+        }
+        }
+
+        
+
+        .mainElementsDiv{
+            display: flex;gap: 20px;
+           ;
+            // padding-top: 40px;
+           
+
+            .elementsDiv1, .elementsDiv2{
+                   display: flex;flex-direction: column;   
+                border:#0732EF solid 1.5px;
+                border-radius: 30px;;gap: 10px;overflow: hidden;
+                transition: 0.5s ease-in-out;
+                
+
+                width: 430px;height: 250px;
+
+                &:hover{
+                    transform: translateY(-20px);
+                    
+                }
+
+                h3{
+                    @include mainColorFont();font-size: 23px;
+                    padding: 0px 25px;padding-top: 25px !important;
+                }
+
+                p{
+                    @include mainColorFont();font-size: 20px;
+                    ;line-height: 25px;padding: 0px 25px
+                }
+
+                .elementsChild{
+                    display: flex;width: 100%;
+                    height: 60px;overflow: hidden;
+                    align-items: center;margin-top: 20px;
+                    &:hover{
+                        @include mainColorBck();
+                        transition: 0.3s;color: white;cursor: pointer;
+                        
+
+                        p{
+                            color: white;transition: 0.3s;
+                        }
+                    }
+
+                    p{
+                        @include mainColorFont();
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            
+
+
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    main{
+        height: 1400px;padding-top: 10px;
+
+        .mainChild1{
+            gap: 5px;
+
+            .mainElementsDiv{
+                padding-top: 200px;
+            }
+
+            .butH1{
+            margin-top: -50px;
+            }
+        }
+
+        .mainChild2{ top: 370px;right: 200px;
+            left: 200px;
+            .damtanja{
+                width: 550px;height: 550px;
+            }
+        }
+    }
+}
+// MAIN ENDS HERE//////////
+// ///
+// /// ////////
+
+section{
+    width: 100%;height: 750px;
+    background-color: rgb(188, 197, 242);
+    margin-top: 50px;display: flex;
+    align-items: center;
+    
+
+    .sc1maindiv{
+       display: flex;flex-direction: column;
+       height: 70%;width: 90%;align-items: center;
+       
+
+       .calk{display: flex;flex-direction:column;
+        gap: 50px;justify-content: center !important;
+            
+    max-width: 800px;
+        
+        
+
+         .bigP{
+            @include mainColorFont();
+            font-weight: bold !important;
+            font-size: 75px;;
+        }
+        .clk2{
+            display: flex;flex-direction: column;
+            gap: 20px;
+
+                p{
+            @include mainColorFont();
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .paragr{
+            font-weight: 200;
+            font-size: 19px;
+            width: 85%;
+            letter-spacing: 1px;
+            line-height: 23px;
+            
+        }
+        }
+        
+       
+
+        button{
+            width: 300px;
+            border: #0732EF solid 0.5px;
+            border-radius: 50px;background-color: transparent;
+            @include mainColorFont();font-size: 20px;
+            padding: 15px 30px; transition: 0.3s ease-in-out;
+
+            &:hover{
+                color: white;
+                @include mainColorBck();
+                cursor: pointer;
+            }
+        }
+       }
+
+
+   
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1140px){
+    
+    header{
+        padding: 0px 30px;
+
+
+        .hdr1{
+            width: 30%
+        }
+        .hdr2{width: 70%;
+            nav{
+                ul{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1002px){
+    main{
+        padding-bottom: 0;
+    }
+
+    section{
+        margin-top: 0;
+    }
+
+    
+}
+@media screen and (max-width: 960px){
+
+    main{
+        padding-top: 50px;padding-bottom:90px;;
+
+        .mainChild1{
+            padding: 0;align-items: center;
+        }
+        .mainChild2{
+            top: 220px;left: 100px;
+        }
+
+        .mainChild1{
+            .mainElementsDiv{
+                display: flex;flex-direction: column;
+                align-items: center;margin-bottom: -200px;
+
+                .elementsDiv1, .elementsDiv2{
+                    width: 550px;height: 300px;
+
+                    h3{
+                        font-size: 33px;
+                    }
+
+                    p{
+                        font-size: 25px;width: 100%;;
+                    }
+
+                    .elementsChild{
+                        height: 100px;
+
+                        p{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section{margin-top: 30px;;
+
+        .sc1maindiv{
+            width: 100%;
+            
+    box-sizing: border-box;
+
+    .calk{
+        width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+        }
+
+    }
+}
+
+@media screen and (max-width: 812px){
+    main{
+        .mainChild1{
+            .butH1{
+                h1{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    header{
+        .hdr2{padding-right: 50px;
+
+            nav{
+                display: none;
+            }
+            label{
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    main{
+        .mainChild2{top: 350px;
+            .damtanja{
+                width: 400px;height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    main{padding-top: 100px;
+        .mainChild2{
+            top: 300px;
+        }
+        
+    }
+    section{
+        .sc1maindiv{
+            .calk{
+                .clk2{
+                    .paragr{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 560px){
+
+    main{
+        .mainChild1{
+            .mainElementsDiv{
+                .elementsDiv1, .elementsDiv2{
+                    width: 400px;height: 250px;
+
+                    h3{
+                        font-size: 20px;
+                    }
+
+                    p{
+                        font-size: 19px;
+                    }
+
+                    .elementsChild{
+                        p{
+                            font-size: 19px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    section{
+        .sc1maindiv{
+            .calk{
+            .bigP{
+                font-size: 45px;
+            }
+            }
+        }
+    }
+}
+@media screen and (max-width: 556px){
+    main{
+        .mainChild2{
+            top: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 510px){
+    main{
+
+        .mainChild2{top: 400px;
+            .damtanja{
+                width: 330px;
+            }
+        }
+        .mainChild1{
+            .butH1{
+                gap: 30px;
+
+                h1{
+                    font-size: 45px;
+                }
+
+               
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    main{
+        .mainChild2{
+            left:50px;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    
+    main{
+        .mainChild2{
+            left: 30px;top: 500px;
+        }
+        .mainChild1{
+            .mainElementsDiv{
+                .elementsDiv1, .elementsDiv2{
+                    width: 370px;height: 240px;
+                }
+            }
+        }
+    }
+}
+
