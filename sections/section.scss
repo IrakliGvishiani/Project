@@ -3,9 +3,16 @@
     box-sizing: border-box;
 }
 
+@mixin mainColorFont {
+    color: #0732EF;
+}
+@mixin mainColorBck{
+    background-color: #0732EF;
+}
+
 .sec2{
     width: 100%;height: 800px;
-    background-color: blue;margin: 0;
+    background-color: rgb(7, 50, 239);margin: 0;
     position: relative;
     .imgdiv{
     
@@ -17,6 +24,47 @@
             img{
                 width: 700px;height: 470px;
                 border-radius: 30px;;
+            }
+        }
+    }
+
+
+    .servicesDiv{
+        width: 80%; height: 300px;
+        display: flex;flex-direction: column;
+        gap: 50px;
+        justify-content: end;
+        align-items: center;
+        background-color: red;
+        
+  
+        .rame{
+            display: flex;flex-direction: column;
+             gap: 50px;
+             width: 60%;background-color: green;
+        }
+
+        .fr{
+            color: white;font-size: 70px;
+            font-weight: bold;
+            ;
+        }
+        .f{
+            color: white;font-size: 20px;
+            width: 85%;
+        }
+
+        button{
+            width: 280px;
+            padding: 15px 30px;
+            border: solid 0.5px white;
+            border-radius: 50px;background-color: transparent;
+            font-size: 20px;color: white;transition: 0.3s ease-in-out;
+
+            &:hover{
+                background-color: rgb(217, 251, 153);
+                @include mainColorFont();
+                cursor: pointer;
             }
         }
     }
@@ -35,6 +83,61 @@
                img{
                 width: 600px;height: 350px;
                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sec2{
+        .servicesDiv{
+            .fr{
+                font-size: 55px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px){
+    
+    .sec2{
+        .servicesDiv{
+            width: 90%;
+
+            button{
+                width: 250px;font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 662px){
+    .sec2{
+        .servicesDiv{
+            width: 100%;
+
+            .rame{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 584px){
+    
+    .sec2{
+        .servicesDiv{
+            .rame{
+                width: 90%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .sec2{
+        .servicesDiv{
+            .rame{
+                width: 100%;
             }
         }
     }
