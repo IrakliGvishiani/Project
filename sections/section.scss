@@ -11,37 +11,41 @@
 }
 
 .sec2{
-    width: 100%;height: 800px;
+    width: 100%;height: 2050px;
     background-color: rgb(7, 50, 239);margin: 0;
-    position: relative;
+    position: relative;display: flex;
+    flex-direction: column;
     .imgdiv{
     
     position: absolute;display: flex;
      right: 150px;
         top: -230px;;
+        
 
         .sectionFirstimg{
             img{
-                width: 700px;height: 470px;
+                width: 700px ;height: 470px;
                 border-radius: 30px;;
+                
             }
         }
     }
 
 
     .servicesDiv{
-        width: 80%; height: 300px;
+        width: 70%; height: 550px;
         display: flex;flex-direction: column;
         gap: 50px;
         justify-content: end;
-        align-items: center;
-        background-color: red;
+        align-items: start;
+        
+        
         
   
         .rame{
             display: flex;flex-direction: column;
              gap: 50px;
-             width: 60%;background-color: green;
+             width: 60%;
         }
 
         .fr{
@@ -69,7 +73,253 @@
         }
     }
 
+    .fourcardDiv{
+        width: 100%;display: flex;
+        flex-direction: column;gap: 20px;
+        height: 640px;
+        justify-content: flex-end;
+
+        .fourcrdrow{
+            display: flex;gap: 20px;
+            width: 90%;
+            justify-content: end;
+
+            .crd{
+                width: 470px;height: 280px;
+            border: 0.5px solid white;
+            border-radius: 30px;display: flex;
+            flex-direction: column;padding: 20px 30px;
+            gap: 20px;
+            justify-content: center;
+            &:hover{
+                .sun{
+                    transform: rotate(180deg);
+                }
+            }
+
+            .sun{
+                transition: 1s ease-in-out
+            }
+
+            .strt{
+                color: white;font-size: 23px; font-weight: bold;
+            }
+                    
+            .lng{
+                 font-size: 20px;color: white;
+                line-height: 25px;
+            }
+            }
+        }
+        .scndrow{
+            display: flex;width: 75%;gap: 20px;
+            justify-content: end;
+
+            .crd2{
+                 width: 470px;height: 280px;
+            border: 0.5px solid white;
+            border-radius: 30px;display: flex;
+            flex-direction: column;padding: 20px 30px;
+            gap: 20px;
+            justify-content: center;
+            &:hover{
+                .sun{
+                    transform: rotate(180deg);
+                }
+            }
+
+            .sun{
+                transition: 1s ease-in-out
+            }
+
+            .strt2{
+                color: white;font-size: 23px; font-weight: bold;
+            }
+
+            .lng2{
+                 font-size: 20px;color: white;
+                line-height: 25px;
+            }
+            }
+        }
+    }
+
+    .boostDiv{
+        width: 100%;display: flex;
+       justify-content: center;
+       align-items: end;height: 300px;
+
+
+
+        .boo{
+            color: white;font-weight: bold;
+            font-size: 70px;
+        }
+    }
    
+    .sec2end{
+        display: flex;width: 100%;
+        height: 450px;
+        align-items: end;
+        justify-content: center;
+        gap: 60px;
+        
+
+
+        .scendcolumn{
+            display: flex;flex-direction: column;
+            justify-content: center;
+            align-items: center;gap: 20px;
+           
+
+            .globala{
+                width: 80%;
+                text-align: center;
+            }
+
+            .frstp{
+                font-size: 70px;
+                color: white;
+            }
+            .scndp{
+                color: white;font-size: 23px;
+            }
+        }
+    }
+}
+
+
+
+.sec3{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    .sec3maindiv{
+        display: flex;flex-direction: column;
+        width: 80%;
+        height: 900px;
+        align-items: end;
+        justify-content: center;
+        .al{
+            
+            display: flex;flex-direction: column;
+            gap: 80px;
+            width: 76%;
+
+            .smth{
+
+                button{
+            width: 280px;
+            border: #0732EF solid 0.5px;
+            border-radius: 50px;background-color: white;
+            @include mainColorFont();font-size: 19px;
+            padding: 15px 30px; transition: 0.3s ease-in-out;
+
+            &:hover{
+                color: white;
+                @include mainColorBck();cursor: pointer;
+               
+            }
+        }
+            }
+
+            
+
+
+         .sec3bigP{
+        @include mainColorFont();
+        font-size: 78px;font-weight: bold;
+    }
+
+    .secrowmaindiv{
+        display: flex;gap: 70px;
+        height: 40%;
+        width: 700px;
+
+
+        .columndiv{
+            display: flex;flex-direction: column;
+            gap: 20px;
+            width: 350px;
+            
+           
+            ;
+
+            .retail{
+                @include mainColorFont();
+                font-weight: bold;font-size: 21px;
+            }
+
+            .reta{
+                @include mainColorFont();
+                font-size: 19px;;
+            }
+        }
+    }
+        }
+        
+        
+
+         
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+    .sec2{
+        .fourcardDiv{
+            .scndrow{
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1068px){
+    .sec2{
+        .fourcardDiv{
+            .fourcrdrow{
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+            }
+            .scndrow{
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1066px){
+    .sec2{
+        .sec2end{
+            gap: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 1000px){
@@ -88,11 +338,73 @@
     }
 }
 
+@media screen and (max-width: 960px){
+    .sec2{gaP: 50px;
+        .servicesDiv{
+            height: 1000px !important;
+        }
+        height: 3450px;
+        .sec2end{
+            display: flex;flex-direction: column;
+            gap: 40px;justify-content: center;
+            align-items: center;
+            height: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    .sec2{
+        .fourcardDiv{
+            height: 1240px;
+           align-items: end;
+            .scndrow{
+                display: flex;flex-direction: column;
+            }
+            .fourcrdrow{
+                display: flex;flex-direction: column;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 900px){
     .sec2{
         .servicesDiv{
             .fr{
                 font-size: 55px;
+            }
+        }
+    }
+
+    .sec3{
+
+        .sec3maindiv{
+            align-items: start;
+           
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sec2{
+        .imgdiv{
+            .sectionFirstimg{
+                img{
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 810px){
+    .sec2{
+        .servicesDiv{
+            .rame{
+                width: 70%;
             }
         }
     }
@@ -107,6 +419,47 @@
             button{
                 width: 250px;font-size: 18px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 720px){
+   .sec2{
+    .boostDiv{
+        justify-content: center;width: 50%;
+        text-align: center;
+        .boo{
+            font-size: 60px
+        }
+    }
+   }
+   
+}
+
+@media screen and (max-width: 700px){
+    .sec3{
+        
+        display: flex;align-items: start;
+        height: 1300px;
+        .sec3maindiv{
+           padding-top: 100px;
+align-items: center;
+            .al{
+
+                .secrowmaindiv{
+                    display: flex;flex-direction: column;
+    
+                    width: 100%;height: 500px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 662px){
+    .sec2{
+        .servicesDiv{
+            align-items: center;
+            width: 100%;
         }
     }
 }
@@ -130,6 +483,13 @@
             .rame{
                 width: 90%;
             }
+        }
+    }
+}
+@media screen and (max-width: 422px) {
+    .sec3{
+        .sec3maindiv{
+            align-items: start;
         }
     }
 }
@@ -196,6 +556,23 @@
                 img{
                     width: 400px;
                     height: 240px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 470px){
+    .sec2{
+        .fourcardDiv{
+            .fourcrdrow{
+                .crd{
+                    width: 375px !important;
+                }
+             
+            }
+            .scndrow{
+                .crd2{
+                    width: 375px !important;
                 }
             }
         }
