@@ -166,6 +166,7 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 .sec5 .sec5frstrow {
   width: 70%;
