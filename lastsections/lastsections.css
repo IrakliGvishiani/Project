@@ -189,6 +189,251 @@
   font-size: 19px;
   letter-spacing: 1px;
 }
+.sec5 .calendarCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sec5 .calendarCenter .calendarmaaindiv {
+  border: solid 0.6px #0732EF;
+  border-radius: 30px;
+  height: 500px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  width: 1150px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 {
+  width: 70%;
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part {
+  display: flex;
+  width: 100%;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg {
+  cursor: pointer;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .timezone, .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .chevron {
+  opacity: 0.7;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .pick {
+  color: #0732EF;
+  font-size: 23px;
+  font-weight: bold;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg {
+  align-items: flex-end;
+  display: flex;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .timezone {
+  color: #0732EF;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .chevron {
+  color: #0732EF;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .line {
+  height: 0.5px;
+  background-color: #0732EF;
+  width: 100%;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .mainpartchilds {
+  width: 50%;
+  height: 100%;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+  padding: 0px 25px;
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop svg {
+  color: #0732EF;
+  cursor: pointer;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop p {
+  color: #0732EF;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50px;
+  align-items: center;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .month {
+  color: #0732EF;
+  font-weight: 600;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .numbers {
+  color: #0732EF;
+  font-weight: 600;
+  font-size: 16px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 50px;
+  color: #0732EF;
+  font-weight: 600;
+  font-size: 16px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv:hover {
+  background-color: rgba(0, 0, 0, 0.0549019608);
+  cursor: pointer;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #0732EF;
+  border-radius: 20px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 30px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv {
+  display: flex;
+  justify-content: center;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv p {
+  color: #0732EF;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv p:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child p {
+  color: #0732EF;
+  font-size: 21px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+  display: flex;
+  gap: 10px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
+  border: solid 0.6px #0732EF;
+  border-radius: 30px;
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #0732EF;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button:hover {
+  background-color: rgba(0, 0, 0, 0.056);
+  cursor: pointer;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button:active {
+  background-color: rgba(0, 0, 0, 0.104);
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 {
+  width: 23%;
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn p {
+  color: #0732EF;
+  font-size: 23px;
+  font-weight: bold;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn .lineee {
+  height: 0.5px;
+  background-color: #0732EF;
+  width: 100%;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .calendarend {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  gap: 5px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .calendarend .endP {
+  color: #0732EF;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .calendarend .miniP {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0732EF;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 40px;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv button {
+  border: 0.7px solid #0732EF;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #0732EF;
+  font-size: 20px;
+  padding: 8px 100px;
+  transition: 0.2s ease-in-out;
+}
+.sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv button:hover {
+  background-color: #0732EF;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1000px) {
   .sec4 .imgdiv {
