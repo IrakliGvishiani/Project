@@ -436,6 +436,35 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1150px) {
+  .sec5 {
+    padding-top: 100px;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv {
+    width: 900px;
+    flex-direction: column;
+    height: 750px;
+    padding-top: 40px;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn {
+    align-items: center;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .calendarend {
+    align-items: center;
+    width: 230px;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv {
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1000px) {
   .sec4 .imgdiv {
     right: 50px;
@@ -472,6 +501,32 @@
 @media screen and (max-width: 850px) {
   .sec42 .sec42maindiv .prow {
     width: 100%;
+  }
+}
+@media screen and (max-width: 810px) {
+  .sec5 .calendarCenter .calendarmaaindiv {
+    height: 1100px;
+    width: 600px;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+    width: 70%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+    width: 70%;
+    align-items: center;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild2 {
+    width: 70%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn {
+    width: 300px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -514,6 +569,19 @@
     height: 300px;
   }
 }
+@media screen and (max-width: 620px) {
+  .sec5 .sec5frstrow {
+    width: 100%;
+    justify-content: center;
+  }
+  .sec5 .sec5frstrow .sec5column {
+    width: 90%;
+    gap: 10px;
+  }
+  .sec5 .sec5frstrow .sec5column .bg {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 600px) {
   .sec4 .sec4Maindiv .rowDiv {
     width: 90%;
@@ -524,6 +592,39 @@
   }
   .sec42 .sec42maindiv .prow .pcontainer .smalpar {
     width: 350px;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv {
+    width: 400px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 {
+    width: 100%;
+    align-items: center;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row {
+    justify-content: center;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg {
+    display: none;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+    width: 90%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 582px) {
@@ -572,5 +673,30 @@
   .sec4 .sec4Maindiv .rowDiv .parentofp p {
     font-size: 16px;
     width: 150px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sec5 .calendarCenter .calendarmaaindiv {
+    width: 375px;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+    width: 90%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn {
+    width: 100%;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+    width: 100%;
+    justify-content: center;
+  }
+  .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
+    font-size: 13px;
+    padding: 10px 20px;
   }
 }/*# sourceMappingURL=lastsections.css.map */

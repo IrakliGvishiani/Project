@@ -248,6 +248,7 @@
             flex-direction: column;
             gap: 25px;
             
+            
 
             .top-part{
                 display: flex;
@@ -306,6 +307,7 @@
                 display: flex;
                 width: 100%;
                 height: 100%;
+                
                 
                 
 
@@ -459,6 +461,7 @@
             .detailscolumn{
                  display: flex;flex-direction: column;
                  gap: 5px;
+                 
                 p{color:#0732EF;
                   font-size: 23px;
                   font-weight: bold;
@@ -473,6 +476,7 @@
                 display: flex;flex-direction: column;
                 padding-top: 25px;
                 gap: 5px;
+                
 
                 .endP{
                     color:#0732EF;
@@ -517,6 +521,37 @@
 
 
 
+@media screen and (max-width: 1150px){
+    .sec5{padding-top: 100px;
+        .calendarCenter{
+            .calendarmaaindiv{
+                width: 900px;flex-direction: column;
+                height: 750px;
+                padding-top: 40px;
+               
+                .calendarchild1{
+                    width: 100%;
+                }
+
+                .calendarchild2{
+                    justify-content: center;
+                    align-items: center;
+                    .detailscolumn{
+                        align-items: center;
+                    }
+                    .calendarend{
+                        align-items: center;
+                        width: 230px;
+                    }
+                    .buttondiv{
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 1000px){
@@ -589,6 +624,43 @@
         }
     }
 }
+@media screen and (max-width: 810px){
+    .sec5{
+        .calendarCenter{
+            .calendarmaaindiv{
+                height: 1100px;
+                width: 600px;
+                padding-top: 80px;
+                padding-bottom: 0;
+                .calendarchild1{
+                    .main-part{
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 70px;
+
+                        .fr-child{
+                            width: 70%;
+                        }
+
+                        .sc-child{
+                            width: 70%;
+                            align-items: center;
+                            
+                        }
+                    }
+                }
+                .calendarchild2{
+                    
+                    width: 70%;
+                    .detailscolumn{
+                        width: 300px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 780px){
     .sec42{
@@ -650,6 +722,25 @@
     }
 }
 
+@media screen and (max-width: 620px){
+    .sec5{
+        .sec5frstrow{
+           
+            width: 100%;
+            justify-content: center;
+            
+            .sec5column{
+                width: 90%;
+                gap: 10px;
+                
+                .bg{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 600px){
     .sec4{
         .sec4Maindiv{
@@ -669,6 +760,53 @@
                     }
                     .smalpar{
                         width: 350px;
+                    }
+                }
+            }
+        }
+    }
+
+    .sec5{
+        .calendarCenter{
+            .calendarmaaindiv{
+                width: 400px;
+                padding-left: 0;padding-right: 0;
+
+                .calendarchild1{
+                    width: 100%;
+                    align-items: center;
+                    .top-part{
+                        .top-column{
+                            .kide-row{
+                                justify-content: center;
+                                .psvg{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .main-part{
+                        width: 90%;
+                        
+                        .fr-child{
+                            width: 100%;
+                           
+                        }
+                        .sc-child{
+                            width: 100%;
+
+                            .timecolumn{
+                                width: 100%;
+
+                                .buttonrow{
+                                    width: 100%;
+
+                                    button{
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -768,6 +906,45 @@
                     p{
                         font-size: 16px;
                         width: 150px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .sec5{
+        .calendarCenter{
+            .calendarmaaindiv{
+                width: 375px;
+
+                .calendarchild1{
+                    .main-part{
+                        width: 90%;
+                        
+                        .fr-child{
+                            width: 100%;
+                           
+                        }
+                        .sc-child{
+                            width: 100%;
+
+                            .timecolumn{
+                                width: 100%;
+                                
+
+                                .buttonrow{
+                                    width: 100%;
+                                    justify-content: center;
+
+                                    button{
+                                        font-size: 13px;
+                                        padding: 10px 20px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
