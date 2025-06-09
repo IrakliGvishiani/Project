@@ -7,8 +7,8 @@
   scroll-behavior: smooth;
 }
 
-body {
-  padding-bottom: 200px;
+a {
+  text-decoration: none;
 }
 
 header {
@@ -327,6 +327,11 @@ section .sc1maindiv .calk button:hover {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 1000px) {
+  main .mainChild1 .butH1 h1 {
+    font-size: 50px;
+  }
+}
 @media screen and (max-width: 1002px) {
   main {
     padding-bottom: 0;
@@ -355,14 +360,14 @@ section .sc1maindiv .calk button:hover {
     margin-bottom: -200px;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
-    width: 550px;
-    height: 300px;
+    width: 450px;
+    height: 280px;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1 h3, main .mainChild1 .mainElementsDiv .elementsDiv2 h3 {
-    font-size: 33px;
+    font-size: 28px;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1 p, main .mainChild1 .mainElementsDiv .elementsDiv2 p {
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild {

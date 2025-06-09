@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #0732EF;
+  width: 100%;
+  height: 800px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-areas: "ft1 ft2";
+}
+footer .ft1 {
+  grid-area: ft1;
+  display: grid;
+  grid-template-areas: "k k" "r d" "s f" "e e";
+}
+footer .ft1 .keeprising {
+  grid-area: k;
+  align-self: center;
+  justify-self: center;
+  width: 500px;
+}
+footer .ft1 .keeprising p {
+  font-weight: bold;
+  font-size: 77px;
+  color: white;
+}
+footer .ft1 .reach {
+  grid-area: r;
+  justify-self: flex-end;
+  margin-left: -50px;
+  align-self: center;
+}
+footer .ft1 .reach .flexcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+footer .ft1 .reach .flexcolumn .rch {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+footer .ft1 .reach .flexcolumn .clmn {
+  display: flex;
+  flex-direction: column;
+}
+footer .ft1 .reach .flexcolumn .clmn p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .address {
+  grid-area: d;
+  justify-self: start;
+  align-self: center;
+}
+footer .ft1 .address .dflex {
+  display: flex;
+  height: 110px;
+  align-items: flex-end;
+}
+footer .ft1 .address .dflex p {
+  color: white;
+  font-size: 20px;
+  width: 200px;
+}
+footer .ft1 .socials {
+  grid-area: s;
+  justify-self: end;
+}
+footer .ft1 .socials .socialsflex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+}
+footer .ft1 .socials .socialsflex p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .faq {
+  grid-area: f;
+}
+footer .ft1 .faq .faqflex {
+  display: flex;
+  flex-direction: column;
+}
+footer .ft1 .faq .faqflex p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .footerendp {
+  align-self: flex-end;
+  justify-self: center;
+  margin-bottom: 10px;
+  grid-area: e;
+  text-decoration: none !important;
+}
+footer .ft1 .footerendp a {
+  text-decoration: none;
+}
+footer .ft1 .footerendp p {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+footer .ft1 .footerendp p span {
+  text-decoration: underline;
+}
+footer .ft2 {
+  grid-area: ft2;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "sp sp sp sp sp sp" "fn fn fn ln ln ln" "em em em cm cm cm" "ms ms ms ms ms ms";
+  width: 300px;
+}
+footer .ft2 .space {
+  grid-area: sp;
+}
+footer .ft2 .space .inputflex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 85%;
+  justify-content: flex-end;
+}
+footer .ft2 .space .inputflex p {
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+}
+footer .ft2 .firstname {
+  grid-area: fn;
+  align-self: flex-end;
+}
+footer .ft2 .firstname .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .firstname .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .firstname .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .lastname {
+  grid-area: ln;
+  align-self: flex-end;
+}
+footer .ft2 .lastname .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .lastname .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .lastname .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .email {
+  grid-area: em;
+}
+footer .ft2 .email .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .email .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .email .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .company {
+  grid-area: cm;
+}
+footer .ft2 .message {
+  grid-area: ms;
+}/*# sourceMappingURL=footer.css.map */

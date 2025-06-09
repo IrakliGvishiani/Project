@@ -161,7 +161,7 @@
 
 .sec5 {
   width: 100%;
-  height: 900px;
+  height: 1100px;
   margin: 0;
   background-color: #ffffff;
   display: flex;
@@ -435,7 +435,82 @@
   text-decoration: underline;
   cursor: pointer;
 }
+.sec5 .sec5enddiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sec5 .sec5enddiv .sec5endcolumn {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 40px;
+}
+.sec5 .sec5enddiv .sec5endcolumn .rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec5 .sec5enddiv .sec5endcolumn .rows .energator {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -1.5px;
+  font-size: 25px;
+  color: #0732EF;
+}
+.sec5 .sec5enddiv .sec5endcolumn .rows .Helveior {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #0732EF;
+  font-size: 40px;
+  letter-spacing: -3px;
+}
+.sec5 .sec5enddiv .sec5endcolumn .rows .rodond {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 45px;
+  color: #0732EF;
+  letter-spacing: -4px;
+}
+.sec5 .sec5enddiv .sec5endcolumn .rows .ktilario {
+  color: #0732EF;
+  letter-spacing: -4px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.sec5 .sec5enddiv .sec5endcolumn .rows .eternet {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #0732EF;
+  font-style: normal;
+  font-size: 35px;
+}
+.sec5 .sec5enddiv .sec5endcolumn .clients {
+  color: #0732EF;
+  font-weight: bold;
+  font-size: 70px;
+}
 
+@media screen and (max-width: 1185px) {
+  .sec5 .sec5enddiv .sec5endcolumn {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1032px) {
+  .sec5 .sec5enddiv .sec5endcolumn .clients {
+    font-size: 40px;
+  }
+  .sec5 .sec5enddiv .sec5endcolumn .rows {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1150px) {
   .sec5 {
     padding-top: 100px;

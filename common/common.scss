@@ -7,10 +7,14 @@
    
 }
 
-body{
-    padding-bottom: 200px;
-   
+a{
+    text-decoration: none;
 }
+
+// body{
+//     padding-bottom: 200px;
+   
+// }
 
 @mixin mainColorFont {
     color: #0732EF;
@@ -407,6 +411,17 @@ section{
         }
     }
 }
+@media screen and (max-width: 1000px){
+    main{
+        .mainChild1{
+            .butH1{
+                h1{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1002px){
     main{
@@ -437,14 +452,14 @@ section{
                 align-items: center;margin-bottom: -200px;
 
                 .elementsDiv1, .elementsDiv2{
-                    width: 550px;height: 300px;
+                    width: 450px;height: 280px;
 
                     h3{
-                        font-size: 33px;
+                        font-size: 28px;
                     }
 
                     p{
-                        font-size: 25px;width: 100%;;
+                        font-size: 20px;width: 100%;;
                     }
 
                     .elementsChild{
