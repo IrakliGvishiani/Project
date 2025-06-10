@@ -452,7 +452,7 @@ section{
                 align-items: center;margin-bottom: -200px;
 
                 .elementsDiv1, .elementsDiv2{
-                    width: 450px;height: 280px;
+                    width: 450px;height: 270px;
 
                     h3{
                         font-size: 28px;
@@ -521,7 +521,7 @@ section{
 
 @media screen and (max-width: 650px){
     main{
-        .mainChild2{top: 350px;
+        .mainChild2{top: 400px;
             .damtanja{
                 width: 400px;height: 400px;
             }
@@ -532,7 +532,7 @@ section{
 @media screen and (max-width: 600px){
     main{padding-top: 100px;
         .mainChild2{
-            top: 300px;
+            top: 400px;
         }
         
     }
@@ -631,12 +631,12 @@ section{
     
     main{
         .mainChild2{
-            left: 30px;top: 500px;
+            left: 30px;top: 400px;
         }
         .mainChild1{
             .mainElementsDiv{
                 .elementsDiv1, .elementsDiv2{
-                    width: 370px;height: 240px;
+                    width: 370px;height: 280px;
                 }
             }
         }

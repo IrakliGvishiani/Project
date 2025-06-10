@@ -300,7 +300,6 @@ footer .ft2 .message .inflex button:hover {
   }
   footer .ft2 .space p {
     display: flex;
-    background-color: green;
   }
   footer .ft2 .message .inflex {
     margin-top: 0;
@@ -338,7 +337,7 @@ footer .ft2 .message .inflex button:hover {
     width: 100%;
   }
   footer .ft2 .firstname .inflex input {
-    width: 100%;
+    width: 350px;
   }
   footer .ft2 .email {
     justify-self: flex-start;
@@ -348,7 +347,7 @@ footer .ft2 .message .inflex button:hover {
     width: 100%;
   }
   footer .ft2 .email .inflex input {
-    width: 100%;
+    width: 350px;
   }
   footer .ft2 .lastname {
     justify-self: flex-start;
@@ -358,7 +357,7 @@ footer .ft2 .message .inflex button:hover {
     width: 100%;
   }
   footer .ft2 .lastname .inflex input {
-    width: 100%;
+    width: 350px;
   }
   footer .ft2 .message {
     justify-self: flex-start;
@@ -368,7 +367,7 @@ footer .ft2 .message .inflex button:hover {
     width: 100%;
   }
   footer .ft2 .message .inflex textarea {
-    width: 100%;
+    width: 350px;
   }
   footer .ft2 .company {
     justify-self: flex-start;
@@ -378,11 +377,14 @@ footer .ft2 .message .inflex button:hover {
     width: 100%;
   }
   footer .ft2 .company .inflex input {
-    width: 100%;
+    width: 350px;
+  }
+  footer .ft2 .space {
+    width: 300px;
   }
   footer .ft2 .space p {
     font-size: 45px;
-    width: 200px;
+    width: 300px;
   }
   footer .ft1 {
     width: 100px;
@@ -399,7 +401,7 @@ footer .ft2 .message .inflex button:hover {
     font-size: 17px;
   }
   footer .ft1 .address .dflex {
-    margin-left: -50px;
+    margin-left: -100px;
   }
   footer .ft1 .address .dflex p {
     font-size: 17px;
@@ -416,11 +418,15 @@ footer .ft2 .message .inflex button:hover {
     font-size: 17px;
   }
   footer .ft1 .faq {
-    width: 50%;
+    width: 0%;
   }
   footer .ft1 .faq .faqflex {
-    background-color: red;
-    margin-left: -50px;
-    width: 200px;
+    margin-left: -100px;
+    width: 125px;
+  }
+  footer .ft1 .footerendp {
+    align-self: flex-end;
+    width: 350px;
+    justify-self: start;
   }
 }/*# sourceMappingURL=footer.css.map */

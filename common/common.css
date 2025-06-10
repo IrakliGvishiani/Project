@@ -361,7 +361,7 @@ section .sc1maindiv .calk button:hover {
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
     width: 450px;
-    height: 280px;
+    height: 270px;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1 h3, main .mainChild1 .mainElementsDiv .elementsDiv2 h3 {
     font-size: 28px;
@@ -409,7 +409,7 @@ section .sc1maindiv .calk button:hover {
 }
 @media screen and (max-width: 650px) {
   main .mainChild2 {
-    top: 350px;
+    top: 400px;
   }
   main .mainChild2 .damtanja {
     width: 400px;
@@ -421,7 +421,7 @@ section .sc1maindiv .calk button:hover {
     padding-top: 100px;
   }
   main .mainChild2 {
-    top: 300px;
+    top: 400px;
   }
   section .sc1maindiv .calk .clk2 .paragr {
     width: 100%;
@@ -475,10 +475,10 @@ section .sc1maindiv .calk button:hover {
 @media screen and (max-width: 400px) {
   main .mainChild2 {
     left: 30px;
-    top: 500px;
+    top: 400px;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
     width: 370px;
-    height: 240px;
+    height: 280px;
   }
 }/*# sourceMappingURL=common.css.map */

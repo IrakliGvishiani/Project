@@ -18,6 +18,8 @@ footer{
     grid-template-areas:
      'ft1 ft2';
 
+   
+
      .ft1{
         grid-area: ft1;
         display: grid;
@@ -427,7 +429,7 @@ footer{
                     width: 100%;
 
                     input{
-                        width: 100%;
+                        width: 350px;
                     }
                 }
             }
@@ -440,7 +442,7 @@ footer{
                     width: 100%;
 
                     input{
-                        width: 100%;
+                        width: 350px;
                     }
                 }
             }
@@ -454,7 +456,7 @@ footer{
                     
 
                     input{
-                        width: 100%;
+                        width: 350px;
                     }
                 }
             }
@@ -467,7 +469,7 @@ footer{
                     width: 100%;
 
                     textarea{
-                        width: 100%;
+                        width: 350px;
                     }
                 }
             }
@@ -479,14 +481,15 @@ footer{
                     width: 100%;
 
                     input{
-                        width: 100%;
+                        width: 350px;
                     }
                 }
             }
             .space{
+                width: 300px;
                 p{
                     font-size: 45px;
-                    width: 200px;
+                    width: 300px;
                 }
             }
         }
@@ -511,7 +514,7 @@ footer{
             .address{
                 
                 .dflex{
-                    margin-left: -50px;
+                    margin-left: -100px;
                     
                     p{
                         font-size: 17px;
@@ -532,14 +535,19 @@ footer{
                 }
             }
             .faq{
-                width: 50%;
+                width: 0%;
                 .faqflex{
                     
-                    margin-left: -50px;
-                    width: 200px;
+                    margin-left: -100px;
+                    width: 125px;
 
                    
                 }
+            }
+            .footerendp{
+                
+              align-self: flex-end;width: 350px;
+                justify-self: start;
             }
 
         }
