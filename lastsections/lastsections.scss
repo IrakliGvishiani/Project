@@ -619,7 +619,7 @@
 }
 
 @media screen and (max-width: 1150px){
-    .sec5{padding-top: 100px;
+    .sec5{padding-top: 100px;margin-bottom: 200px;
         .calendarCenter{
             .calendarmaaindiv{
                 width: 900px;flex-direction: column;
@@ -722,7 +722,7 @@
     }
 }
 @media screen and (max-width: 810px){
-    .sec5{
+    .sec5{margin-bottom: 500px;;
         .calendarCenter{
             .calendarmaaindiv{
                 height: 1100px;
@@ -910,7 +910,11 @@
         }
     }
 }
-
+@media screen and (max-width: 590px){
+    .sec5{
+        margin-bottom: 600px;
+    }
+}
 
 @media screen and (max-width: 582px){
     

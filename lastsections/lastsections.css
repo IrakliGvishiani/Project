@@ -514,6 +514,7 @@
 @media screen and (max-width: 1150px) {
   .sec5 {
     padding-top: 100px;
+    margin-bottom: 200px;
   }
   .sec5 .calendarCenter .calendarmaaindiv {
     width: 900px;
@@ -579,6 +580,9 @@
   }
 }
 @media screen and (max-width: 810px) {
+  .sec5 {
+    margin-bottom: 500px;
+  }
   .sec5 .calendarCenter .calendarmaaindiv {
     height: 1100px;
     width: 600px;
@@ -700,6 +704,11 @@
   }
   .sec5 .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .sec5 {
+    margin-bottom: 600px;
   }
 }
 @media screen and (max-width: 582px) {
