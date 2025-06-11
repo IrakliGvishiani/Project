@@ -48,9 +48,14 @@ header .hdr2 nav ul {
   color: #0732EF;
   font-size: 21px;
 }
-header .hdr2 nav ul .hdr-log:hover {
+header .hdr2 nav ul label {
+  display: flex;
+}
+header .hdr2 nav ul label .hdr-log:hover {
   opacity: 0.7 !important;
   cursor: pointer;
+  color: #0732EF;
+  font-size: 21px;
 }
 header .hdr2 nav ul li:hover {
   text-decoration: underline;
@@ -76,8 +81,97 @@ header .hdr2 .check:checked ~ .navdi {
 header .hdr2 .check:checked ~ .navdi > ul {
   display: flex;
 }
+header .hdr2 .check2:checked + label > .hdr-log {
+  display: none;
+}
+header .hdr2 .check2:checked + label > .sam {
+  display: flex;
+}
+header .hdr2 .check2:checked ~ .loginform {
+  display: flex;
+}
+header .hdr2 .login-line1 {
+  display: none;
+  width: 40px;
+  height: 2.5px;
+  background-color: #0732EF;
+  transform: rotate(-45deg) translate(30px) translateY(30px);
+}
+header .hdr2 .login-line2 {
+  display: none;
+  width: 40px;
+  height: 2.5px;
+  transform: rotate(45deg);
+  background-color: #0732EF;
+}
+header .hdr2 .loginform {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+header .hdr2 .loginform form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+header .hdr2 .loginform form .textareadiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+header .hdr2 .loginform form .textareadiv textarea {
+  resize: none;
+  background-color: transparent;
+  border: solid 1px #0732EF;
+  border-radius: 30px;
+  padding: 5px 15px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 19px;
+  width: 100%;
+  height: 150px;
+}
+header .hdr2 .loginform form .formrow {
+  display: flex;
+  gap: 20px;
+}
+header .hdr2 .loginform form .formrow .inputdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+header .hdr2 .loginform form .formrow .inputdiv p {
+  align-self: flex-start;
+}
+header .hdr2 .loginform form .formrow .inputdiv input {
+  background-color: transparent;
+  border: solid 1px #0732EF;
+  border-radius: 30px;
+  padding: 5px 15px;
+  width: 300px;
+  height: 40px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 19px;
+}
 header .hdr2 .check {
   display: none;
+}
+header .hdr2 .check2 {
+  display: none !important;
 }
 header .hdr2 label {
   display: none;
