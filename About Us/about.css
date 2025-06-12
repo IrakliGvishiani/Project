@@ -11,10 +11,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  padding-bottom: 200px;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -266,6 +262,7 @@ main .ourPdiv p {
   color: #0732EF;
   font-size: 20px;
   letter-spacing: 1px;
+  width: 770px;
 }
 
 section {
@@ -274,6 +271,7 @@ section {
   width: 100%;
   align-items: center;
   gap: 50px;
+  height: 1300px;
 }
 section .risesteamdiv {
   display: flex;
@@ -284,7 +282,462 @@ section .risesteamdiv p {
   color: #0732EF;
   font-weight: bold;
 }
+section .cardrow {
+  display: flex;
+  width: 60%;
+  justify-content: flex-start;
+}
+section .cardrow button {
+  width: 300px;
+  border: #0732EF solid 0.5px;
+  border-radius: 50px;
+  background-color: white;
+  color: #0732EF;
+  font-size: 20px;
+  padding: 15px 30px;
+  transition: 0.3s ease-in-out;
+}
+section .cardrow button:hover {
+  color: white;
+  background-color: #0732EF;
+  cursor: pointer;
+}
+section .cardrow .card {
+  display: flex;
+  border: solid 0.7px #0732EF;
+  border-radius: 30px;
+  width: 900px;
+  height: 290px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+section .cardrow .card:hover {
+  background-color: rgb(217, 251, 153);
+}
+section .cardrow .card:hover .left, section .cardrow .card:hover .right {
+  transform: translateX(55px);
+}
+section .cardrow .card .left {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+section .cardrow .card .left .imagediv {
+  background-image: url(https://static.wixstatic.com/media/84770f_55d1b823e2bd4ceba81874fbf031132e~mv2.jpg/v1/crop/x_0,y_22,w_1784,h_1784/fill/w_188,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/GettyImages-1952382687crop.jpg);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+section .cardrow .card .left .imagediv2 {
+  background-image: url(https://static.wixstatic.com/media/c837a6_44fe16bdd31f4eb6a016a44c12983bd2~mv2.jpg/v1/crop/x_57,y_159,w_396,h_397/fill/w_188,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ac5860b97b46401e8da166f9f4e2f872~mv2.jpg);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+section .cardrow .card .right {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  transition: 0.3s ease-in-out;
+}
+section .cardrow .card .right .cardcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .cardrow .card .right .cardcolumn .name {
+  color: #0732EF;
+  font-weight: bold;
+  font-size: 21px;
+}
+section .cardrow .card .right .cardcolumn .otherp {
+  color: #0732EF;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+section .cardrow .card .right .cardcolumn .other {
+  color: #0732EF;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+section .cardrow .card .right .cardcolumn a {
+  color: #0732EF;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  width: 90px;
+}
+section .cardrow2 {
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+}
+section .cardrow2 .card {
+  display: flex;
+  border: solid 0.7px #0732EF;
+  border-radius: 30px;
+  width: 900px;
+  height: 290px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+section .cardrow2 .card:hover {
+  background-color: rgb(217, 251, 153);
+}
+section .cardrow2 .card:hover .left, section .cardrow2 .card:hover .right {
+  transform: translateX(55px);
+}
+section .cardrow2 .card .left {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+section .cardrow2 .card .left .imagediv {
+  background-image: url(https://static.wixstatic.com/media/c837a6_8d57509751f54937aacc80ec263152af~mv2.jpg/v1/crop/x_28,y_127,w_396,h_396/fill/w_188,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_45763842eac54110a5f26b71739bc703~mv2.jpg);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+section .cardrow2 .card .right {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  transition: 0.3s ease-in-out;
+}
+section .cardrow2 .card .right .cardcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .cardrow2 .card .right .cardcolumn .name {
+  color: #0732EF;
+  font-weight: bold;
+  font-size: 21px;
+}
+section .cardrow2 .card .right .cardcolumn .otherp {
+  color: #0732EF;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+section .cardrow2 .card .right .cardcolumn .other {
+  color: #0732EF;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+section .cardrow2 .card .right .cardcolumn a {
+  color: #0732EF;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+  width: 90px;
+}
 
+footer {
+  background-color: #0732EF;
+  width: 100%;
+  height: 800px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-areas: "ft1 ft2";
+}
+footer .ft1 {
+  grid-area: ft1;
+  display: grid;
+  grid-template-areas: "k k" "r d" "s f" "e e";
+}
+footer .ft1 .keeprising {
+  grid-area: k;
+  align-self: center;
+  justify-self: center;
+  width: 500px;
+}
+footer .ft1 .keeprising p {
+  font-weight: bold;
+  font-size: 77px;
+  color: white;
+}
+footer .ft1 .reach {
+  grid-area: r;
+  justify-self: flex-end;
+  margin-left: -50px;
+  align-self: center;
+}
+footer .ft1 .reach .flexcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 300px;
+}
+footer .ft1 .reach .flexcolumn .rch {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+footer .ft1 .reach .flexcolumn .clmn {
+  display: flex;
+  flex-direction: column;
+}
+footer .ft1 .reach .flexcolumn .clmn p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .address {
+  grid-area: d;
+  justify-self: start;
+  align-self: center;
+}
+footer .ft1 .address .dflex {
+  display: flex;
+  height: 110px;
+  align-items: flex-end;
+}
+footer .ft1 .address .dflex p {
+  color: white;
+  font-size: 20px;
+  width: 200px;
+}
+footer .ft1 .socials {
+  grid-area: s;
+  justify-self: end;
+}
+footer .ft1 .socials .socialsflex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+}
+footer .ft1 .socials .socialsflex p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .faq {
+  grid-area: f;
+}
+footer .ft1 .faq .faqflex {
+  display: flex;
+  flex-direction: column;
+}
+footer .ft1 .faq .faqflex p {
+  color: white;
+  font-size: 20px;
+}
+footer .ft1 .footerendp {
+  align-self: flex-end;
+  justify-self: center;
+  margin-bottom: 10px;
+  grid-area: e;
+  text-decoration: none !important;
+}
+footer .ft1 .footerendp a {
+  text-decoration: none;
+}
+footer .ft1 .footerendp p {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+footer .ft1 .footerendp p span {
+  text-decoration: underline;
+}
+footer .ft2 {
+  grid-area: ft2;
+  display: grid;
+  gap: 25px;
+  grid-template-areas: "sp sp sp sp sp sp" "fn fn fn ln ln ln" "em em em cm cm cm" "ms ms ms ms ms ms";
+  width: 300px;
+}
+footer .ft2 .space {
+  grid-area: sp;
+  align-self: center;
+  justify-self: center;
+  width: 500px;
+}
+footer .ft2 .space p {
+  display: none;
+  font-weight: bold;
+  font-size: 77px;
+  color: white;
+}
+footer .ft2 .firstname {
+  grid-area: fn;
+  align-self: flex-end;
+}
+footer .ft2 .firstname .inputflex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 85%;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+footer .ft2 .firstname .inputflex p {
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+}
+footer .ft2 .firstname .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .firstname .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .firstname .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .lastname {
+  grid-area: ln;
+  align-self: flex-end;
+}
+footer .ft2 .lastname .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .lastname .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .lastname .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .email {
+  grid-area: em;
+}
+footer .ft2 .email .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .email .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .email .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .company {
+  grid-area: cm;
+}
+footer .ft2 .company .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .ft2 .company .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .company .inflex input {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  width: 240px;
+  height: 42px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+}
+footer .ft2 .message {
+  grid-area: ms;
+}
+footer .ft2 .message .inflex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -100px;
+}
+footer .ft2 .message .inflex label {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .ft2 .message .inflex textarea {
+  background-color: transparent;
+  border: solid white 0.6px;
+  border-radius: 20px;
+  padding: 0px 20px;
+  width: 505px;
+  height: 100px;
+  color: white;
+  caret-color: white;
+  font-size: 16px;
+  resize: none;
+}
+footer .ft2 .message .inflex button {
+  width: 250px;
+  padding: 10px 20px;
+  border: solid 0.5px white;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin-top: 5px;
+}
+footer .ft2 .message .inflex button:hover {
+  background-color: rgb(217, 251, 153);
+  color: #0732EF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1190px) {
+  section .risesteamdiv {
+    width: 70%;
+  }
+  section .cardrow {
+    width: 70%;
+  }
+  section .cardrow2 {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 1140px) {
   header {
     padding: 0px 30px;
@@ -299,6 +752,33 @@ section .risesteamdiv p {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 1000px) {
+  section .risesteamdiv {
+    width: 80%;
+  }
+  section .cardrow {
+    width: 80%;
+  }
+  section .cardrow2 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 875px) {
+  section .risesteamdiv {
+    width: 90%;
+  }
+  section .cardrow {
+    width: 90%;
+  }
+  section .cardrow2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 830px) {
+  main .ourPdiv p {
+    width: 600px;
+  }
+}
 @media screen and (max-width: 800px) {
   header .hdr2 {
     padding-right: 50px;
@@ -310,8 +790,232 @@ section .risesteamdiv p {
     display: flex;
   }
 }
+@media screen and (max-width: 777px) {
+  section .risesteamdiv {
+    width: 100%;
+  }
+  section .cardrow {
+    width: 100%;
+  }
+  section .cardrow2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  section {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  section .cardrow {
+    justify-content: center;
+  }
+  section .cardrow .card {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 500px;
+  }
+  section .cardrow .card .left {
+    width: 50%;
+    height: 80%;
+    justify-content: flex-start;
+  }
+  section .cardrow .card .right {
+    width: 100%;
+    padding-right: 0;
+  }
+  section .cardrow2 {
+    justify-content: center;
+  }
+  section .cardrow2 .card {
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 500px;
+  }
+  section .cardrow2 .card .left {
+    width: 50%;
+    height: 80%;
+    justify-content: flex-start;
+  }
+  section .cardrow2 .card .right {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 645px) {
+  main {
+    height: 830px;
+  }
+  main .ourPdiv p {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 505px) {
+  main .ourPdiv p {
+    width: 375px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section .cardrow .card {
+    width: 375px;
+  }
+  section .cardrow2 .card {
+    width: 375px;
+  }
+}
 @media screen and (max-width: 430px) {
   main {
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 1215px) {
+  footer {
+    grid-template-areas: "ft2" "ft1";
+    height: 1200px;
+  }
+  footer .ft1 .keeprising p {
+    display: none;
+  }
+  footer .ft2 {
+    width: 100%;
+  }
+  footer .ft2 .space {
+    justify-self: flex-start;
+  }
+  footer .ft2 .space p {
+    display: flex;
+  }
+  footer .ft2 .message .inflex {
+    margin-top: 0;
+    justify-self: center;
+  }
+  footer .ft2 .company .inflex {
+    margin-top: 0;
+  }
+  footer .ft2 .email .inflex {
+    justify-self: flex-end;
+  }
+  footer .ft2 .firstname .inflex {
+    justify-self: flex-end;
+  }
+  footer .ft2 .firstname .inputflex {
+    justify-self: flex-end;
+  }
+}
+@media screen and (max-width: 510px) {
+  footer .ft2 {
+    width: 100px;
+    grid-template-areas: "sp" "fn" "ln" "em" "cm" "ms";
+    padding-left: 5px;
+  }
+  footer .ft2 .firstname {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .firstname .inflex {
+    width: 100%;
+  }
+  footer .ft2 .firstname .inflex input {
+    width: 350px;
+  }
+  footer .ft2 .email {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .email .inflex {
+    width: 100%;
+  }
+  footer .ft2 .email .inflex input {
+    width: 350px;
+  }
+  footer .ft2 .lastname {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .lastname .inflex {
+    width: 100%;
+  }
+  footer .ft2 .lastname .inflex input {
+    width: 350px;
+  }
+  footer .ft2 .message {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .message .inflex {
+    width: 100%;
+  }
+  footer .ft2 .message .inflex textarea {
+    width: 350px;
+  }
+  footer .ft2 .company {
+    justify-self: flex-start;
+    width: 85%;
+  }
+  footer .ft2 .company .inflex {
+    width: 100%;
+  }
+  footer .ft2 .company .inflex input {
+    width: 350px;
+  }
+  footer .ft2 .space {
+    width: 300px;
+  }
+  footer .ft2 .space p {
+    font-size: 45px;
+    width: 300px;
+  }
+  footer .ft1 {
+    width: 100px;
+  }
+  footer .ft1 .reach {
+    margin-left: 0;
+    width: 100%;
+  }
+  footer .ft1 .reach .flexcolumn {
+    width: 100%;
+    justify-self: flex-start;
+  }
+  footer .ft1 .reach .flexcolumn .clmn p {
+    font-size: 17px;
+  }
+  footer .ft1 .address .dflex {
+    margin-left: -100px;
+  }
+  footer .ft1 .address .dflex p {
+    font-size: 17px;
+    width: 100px;
+  }
+  footer .ft1 .socials {
+    width: 100%;
+  }
+  footer .ft1 .socials .socialsflex {
+    align-self: flex-start;
+    width: 100%;
+  }
+  footer .ft1 .socials .socialsflex a p {
+    font-size: 17px;
+  }
+  footer .ft1 .faq {
+    width: 0%;
+  }
+  footer .ft1 .faq .faqflex {
+    margin-left: -100px;
+    width: 125px;
+  }
+  footer .ft1 .faq .faqflex p {
+    font-size: 17px;
+  }
+  footer .ft1 .footerendp {
+    align-self: flex-end;
+    width: 350px;
+    justify-self: start;
   }
 }/*# sourceMappingURL=about.css.map */
