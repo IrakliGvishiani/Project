@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  padding-bottom: 200px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -243,6 +247,7 @@ main {
   width: 100%;
   display: flex;
   padding-left: 50px;
+  height: 650px;
 }
 main .ourPdiv {
   display: flex;
@@ -261,6 +266,23 @@ main .ourPdiv p {
   color: #0732EF;
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+section .risesteamdiv {
+  display: flex;
+  width: 60%;
+}
+section .risesteamdiv p {
+  font-size: 22px;
+  color: #0732EF;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1140px) {
@@ -286,5 +308,10 @@ main .ourPdiv p {
   }
   header .hdr2 label {
     display: flex;
+  }
+}
+@media screen and (max-width: 430px) {
+  main {
+    padding-left: 0;
   }
 }/*# sourceMappingURL=about.css.map */

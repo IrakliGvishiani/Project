@@ -9,10 +9,10 @@ a{
 }
 
 
-// body{
-//     padding-bottom: 200px;
+body{
+    padding-bottom: 200px;
    
-// }
+}
 
 @mixin mainColorFont {
     color: #0732EF;
@@ -271,7 +271,8 @@ header{
 main{
     width: 100%;
     display: flex;
-    padding-left: 50px;;
+    padding-left: 50px;
+    height: 650px;
 
     .ourPdiv{
         display: flex;flex-direction: column;
@@ -293,6 +294,26 @@ main{
             font-size: 20px;
             letter-spacing: 1px;
             
+        }
+    }
+}
+
+section{
+    display: flex;flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+
+    .risesteamdiv{
+        display: flex;
+        width: 60%;
+        
+        
+
+        p{
+            font-size: 22px;
+            @include mainColorFont();
+            font-weight: bold;
         }
     }
 }
@@ -372,5 +393,10 @@ main{
                 display: flex;
             }
         }
+    }
+}
+@media screen and (max-width: 430px){
+    main{
+        padding-left: 0;
     }
 }
