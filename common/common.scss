@@ -109,17 +109,17 @@ header{
         .login-line1{
             display: none;
                  width: 40px;
-            height: 2.5px;
+            height: 3.5px;
             background-color: #0732EF;
-            transform: rotate(-45deg) translate(30px)
-             translateY(30px);
+            transform: rotate(-45deg) translate(29px)
+             translateY(29px);
              
 
         }
         .login-line2{
             display: none;
             width: 40px;
-            height: 2.5px;
+            height: 3.5px;
             transform: rotate(45deg) ;
             background-color: #0732EF;
            
@@ -132,7 +132,7 @@ header{
             position: fixed;
             left: 0;bottom: 0;
             justify-content: center;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(249, 246, 246);
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -143,6 +143,22 @@ header{
                 display: flex;
                 flex-direction: column;
                 gap: 30px;align-items: flex-start;
+
+
+                 button{
+                 width: 250px;
+            padding: 10px 20px;
+            border: solid 0.5px white;
+            border-radius: 50px;@include mainColorBck();
+            font-size: 20px;color: white;transition: 0.3s ease-in-out;
+            margin-top: 5px;
+
+            &:hover{
+                background-color: rgb(217, 251, 153);
+                @include mainColorFont();
+                cursor: pointer;
+            }
+            }
 
                 .textareadiv{
                     display: flex;flex-direction: column;
@@ -549,7 +565,7 @@ section{
             padding: 0;align-items: center;
         }
         .mainChild2{
-            top: 220px;left: 100px;
+            top: 220px;left: 170px;
         }
 
         .mainChild1{
@@ -621,6 +637,13 @@ section{
             label{
                 display: flex;
             }
+        }
+    }
+}
+@media screen and (max-width: 730px) {
+    main{
+        .mainChild2{
+            left: 100px;
         }
     }
 }
@@ -709,7 +732,8 @@ section{
 
         .mainChild2{top: 400px;
             .damtanja{
-                width: 330px;
+                width: 350px;
+                
             }
         }
         .mainChild1{
@@ -745,6 +769,13 @@ section{
                     width: 370px;height: 280px;
                 }
             }
+        }
+    }
+}
+@media screen  and (max-width: 380px){
+    main{
+        .mainChild2{
+            left: 10px;
         }
     }
 }
