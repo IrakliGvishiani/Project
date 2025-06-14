@@ -11,6 +11,372 @@ a {
   text-decoration: none;
 }
 
+.calendarCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 900px;
+  align-items: center;
+}
+.calendarCenter .calendarmaaindiv {
+  border: solid 0.6px #0732EF;
+  border-radius: 30px;
+  height: 500px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  width: 1150px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 {
+  width: 70%;
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part {
+  display: flex;
+  width: 100%;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg {
+  cursor: pointer;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .timezone, .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row:hover .psvg .chevron {
+  opacity: 0.7;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .pick {
+  color: #0732EF;
+  font-size: 23px;
+  font-weight: bold;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg {
+  align-items: flex-end;
+  display: flex;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .timezone {
+  color: #0732EF;
+  font-size: 15px;
+  font-weight: 500;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg .chevron {
+  color: #0732EF;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .line {
+  height: 0.5px;
+  background-color: #0732EF;
+  width: 100%;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .mainpartchilds {
+  width: 50%;
+  height: 100%;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+  padding: 0px 25px;
+  gap: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop svg {
+  color: #0732EF;
+  cursor: pointer;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .frchildtop p {
+  color: #0732EF;
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50px;
+  align-items: center;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .month {
+  color: #0732EF;
+  font-weight: 600;
+  font-size: 15px;
+  opacity: 0.7;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .numbers {
+  color: #0732EF;
+  font-weight: 600;
+  font-size: 16px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 50px;
+  color: #0732EF;
+  font-weight: 600;
+  font-size: 16px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv:hover {
+  background-color: rgba(0, 0, 0, 0.0549019608);
+  cursor: pointer;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child .actualcalendar .calendarrow .dotdiv .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #0732EF;
+  border-radius: 20px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 30px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv {
+  display: flex;
+  justify-content: center;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv p {
+  color: #0732EF;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .sessionsdiv p:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child p {
+  color: #0732EF;
+  font-size: 21px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+  display: flex;
+  gap: 10px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
+  border: solid 0.6px #0732EF;
+  border-radius: 30px;
+  padding: 10px 50px;
+  background-color: transparent;
+  color: #0732EF;
+  font-size: 15px;
+  font-weight: bold;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button:hover {
+  background-color: rgba(0, 0, 0, 0.056);
+  cursor: pointer;
+}
+.calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button:active {
+  background-color: rgba(0, 0, 0, 0.104);
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 {
+  width: 23%;
+  height: 83%;
+  display: flex;
+  flex-direction: column;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn p {
+  color: #0732EF;
+  font-size: 23px;
+  font-weight: bold;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn .lineee {
+  height: 0.5px;
+  background-color: #0732EF;
+  width: 100%;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .calendarend {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  gap: 5px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .calendarend .endP {
+  color: #0732EF;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .calendarend .miniP {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0732EF;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 40px;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv button {
+  border: 0.7px solid #0732EF;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #0732EF;
+  font-size: 20px;
+  padding: 8px 100px;
+  transition: 0.2s ease-in-out;
+}
+.calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv button:hover {
+  background-color: #0732EF;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  .calendarCenter {
+    height: 1200px;
+  }
+  .calendarCenter .calendarmaaindiv {
+    width: 900px;
+    flex-direction: column;
+    height: 750px;
+    padding-top: 40px;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn {
+    align-items: center;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild2 .calendarend {
+    align-items: center;
+    width: 230px;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild2 .buttondiv {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 810px) {
+  .calendarCenter {
+    height: 1400px;
+  }
+  .calendarCenter .calendarmaaindiv {
+    height: 1100px;
+    width: 600px;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+    width: 70%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+    width: 70%;
+    align-items: center;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild2 {
+    width: 70%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild2 .detailscolumn {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .calendarCenter .calendarmaaindiv {
+    width: 400px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 {
+    width: 100%;
+    align-items: center;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row {
+    justify-content: center;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .top-part .top-column .kide-row .psvg {
+    display: none;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+    width: 90%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .calendarCenter .calendarmaaindiv {
+    width: 375px;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part {
+    width: 90%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .fr-child {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn {
+    width: 100%;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow {
+    width: 100%;
+    justify-content: center;
+  }
+  .calendarCenter .calendarmaaindiv .calendarchild1 .main-part .sc-child .timecolumn .buttonrow button {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
 header {
   position: fixed;
   top: 0;
@@ -239,214 +605,31 @@ header .hdr2 .navdi .igdv {
   height: 30px;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  padding-left: 50px;
-  height: 650px;
+@media screen and (max-width: 1140px) {
+  header {
+    padding: 0px 30px;
+  }
+  header .hdr1 {
+    width: 30%;
+  }
+  header .hdr2 {
+    width: 70%;
+  }
+  header .hdr2 nav ul {
+    font-size: 18px;
+  }
 }
-main .ourPdiv {
-  display: flex;
-  flex-direction: column;
-  padding-top: 150px;
-  width: 770px;
-  gap: 35px;
+@media screen and (max-width: 800px) {
+  header .hdr2 {
+    padding-right: 50px;
+  }
+  header .hdr2 nav {
+    display: none;
+  }
+  header .hdr2 label {
+    display: flex;
+  }
 }
-main .ourPdiv h1 {
-  color: #0732EF;
-  font-size: 70px;
-  font-weight: bold;
-  padding-bottom: 5px;
-}
-main .ourPdiv p {
-  color: #0732EF;
-  font-size: 20px;
-  letter-spacing: 1px;
-  width: 770px;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  gap: 50px;
-  height: 1300px;
-}
-section .risesteamdiv {
-  display: flex;
-  width: 60%;
-}
-section .risesteamdiv p {
-  font-size: 22px;
-  color: #0732EF;
-  font-weight: bold;
-}
-section .cardrow {
-  display: flex;
-  width: 60%;
-  justify-content: flex-start;
-}
-section .cardrow button {
-  width: 300px;
-  border: #0732EF solid 0.5px;
-  border-radius: 50px;
-  background-color: white;
-  color: #0732EF;
-  font-size: 20px;
-  padding: 15px 30px;
-  transition: 0.3s ease-in-out;
-}
-section .cardrow button:hover {
-  color: white;
-  background-color: #0732EF;
-  cursor: pointer;
-}
-section .cardrow .card {
-  display: flex;
-  border: solid 0.7px #0732EF;
-  border-radius: 30px;
-  width: 900px;
-  height: 290px;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-}
-section .cardrow .card:hover {
-  background-color: rgb(217, 251, 153);
-}
-section .cardrow .card:hover .left, section .cardrow .card:hover .right {
-  transform: translateX(55px);
-}
-section .cardrow .card .left {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s ease-in-out;
-}
-section .cardrow .card .left .imagediv {
-  background-image: url(https://static.wixstatic.com/media/84770f_55d1b823e2bd4ceba81874fbf031132e~mv2.jpg/v1/crop/x_0,y_22,w_1784,h_1784/fill/w_188,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/GettyImages-1952382687crop.jpg);
-  background-size: cover;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-}
-section .cardrow .card .left .imagediv2 {
-  background-image: url(https://static.wixstatic.com/media/c837a6_44fe16bdd31f4eb6a016a44c12983bd2~mv2.jpg/v1/crop/x_57,y_159,w_396,h_397/fill/w_188,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ac5860b97b46401e8da166f9f4e2f872~mv2.jpg);
-  background-size: cover;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-}
-section .cardrow .card .right {
-  width: 75%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-right: 100px;
-  transition: 0.3s ease-in-out;
-}
-section .cardrow .card .right .cardcolumn {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-section .cardrow .card .right .cardcolumn .name {
-  color: #0732EF;
-  font-weight: bold;
-  font-size: 21px;
-}
-section .cardrow .card .right .cardcolumn .otherp {
-  color: #0732EF;
-  font-size: 19px;
-  letter-spacing: 1px;
-}
-section .cardrow .card .right .cardcolumn .other {
-  color: #0732EF;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 25px;
-}
-section .cardrow .card .right .cardcolumn a {
-  color: #0732EF;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: underline;
-  width: 90px;
-}
-section .cardrow2 {
-  display: flex;
-  width: 80%;
-  justify-content: flex-start;
-}
-section .cardrow2 .card {
-  display: flex;
-  border: solid 0.7px #0732EF;
-  border-radius: 30px;
-  width: 900px;
-  height: 290px;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
-}
-section .cardrow2 .card:hover {
-  background-color: rgb(217, 251, 153);
-}
-section .cardrow2 .card:hover .left, section .cardrow2 .card:hover .right {
-  transform: translateX(55px);
-}
-section .cardrow2 .card .left {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s ease-in-out;
-}
-section .cardrow2 .card .left .imagediv {
-  background-image: url(https://static.wixstatic.com/media/c837a6_8d57509751f54937aacc80ec263152af~mv2.jpg/v1/crop/x_28,y_127,w_396,h_396/fill/w_188,h_188,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_45763842eac54110a5f26b71739bc703~mv2.jpg);
-  background-size: cover;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-}
-section .cardrow2 .card .right {
-  width: 75%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-right: 100px;
-  transition: 0.3s ease-in-out;
-}
-section .cardrow2 .card .right .cardcolumn {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-section .cardrow2 .card .right .cardcolumn .name {
-  color: #0732EF;
-  font-weight: bold;
-  font-size: 21px;
-}
-section .cardrow2 .card .right .cardcolumn .otherp {
-  color: #0732EF;
-  font-size: 19px;
-  letter-spacing: 1px;
-}
-section .cardrow2 .card .right .cardcolumn .other {
-  color: #0732EF;
-  font-size: 20px;
-  letter-spacing: 1px;
-  line-height: 25px;
-}
-section .cardrow2 .card .right .cardcolumn a {
-  color: #0732EF;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: underline;
-  width: 90px;
-}
-
 footer {
   background-color: #0732EF;
   width: 100%;
@@ -727,160 +910,6 @@ footer .ft2 .message .inflex button:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1190px) {
-  section .risesteamdiv {
-    width: 70%;
-  }
-  section .cardrow {
-    width: 70%;
-  }
-  section .cardrow2 {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 1140px) {
-  header {
-    padding: 0px 30px;
-  }
-  header .hdr1 {
-    width: 30%;
-  }
-  header .hdr2 {
-    width: 70%;
-  }
-  header .hdr2 nav ul {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  section .risesteamdiv {
-    width: 80%;
-  }
-  section .cardrow {
-    width: 80%;
-  }
-  section .cardrow2 {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 875px) {
-  section .risesteamdiv {
-    width: 90%;
-  }
-  section .cardrow {
-    width: 90%;
-  }
-  section .cardrow2 {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 830px) {
-  main .ourPdiv p {
-    width: 600px;
-  }
-}
-@media screen and (max-width: 800px) {
-  header .hdr2 {
-    padding-right: 50px;
-  }
-  header .hdr2 nav {
-    display: none;
-  }
-  header .hdr2 label {
-    display: flex;
-  }
-}
-@media screen and (max-width: 777px) {
-  section .risesteamdiv {
-    width: 100%;
-  }
-  section .cardrow {
-    width: 100%;
-  }
-  section .cardrow2 {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 700px) {
-  section {
-    height: auto;
-    margin-bottom: 20px;
-  }
-  section .cardrow {
-    justify-content: center;
-  }
-  section .cardrow .card {
-    display: flex;
-    flex-direction: column;
-    height: 530px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    width: 500px;
-  }
-  section .cardrow .card:hover .left, section .cardrow .card:hover .right {
-    transform: translateX(5px);
-  }
-  section .cardrow .card .left {
-    width: 50%;
-    height: 80%;
-    justify-content: flex-start;
-  }
-  section .cardrow .card .right {
-    width: 100%;
-    padding-right: 0;
-  }
-  section .cardrow2 {
-    justify-content: center;
-  }
-  section .cardrow2 .card {
-    display: flex;
-    flex-direction: column;
-    height: 530px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    width: 500px;
-  }
-  section .cardrow2 .card:hover .left, section .cardrow2 .card:hover .right {
-    transform: translateX(5px);
-  }
-  section .cardrow2 .card .left {
-    width: 50%;
-    height: 80%;
-    justify-content: flex-start;
-  }
-  section .cardrow2 .card .right {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-@media screen and (max-width: 645px) {
-  main {
-    height: 830px;
-  }
-  main .ourPdiv p {
-    width: 450px;
-  }
-}
-@media screen and (max-width: 505px) {
-  main .ourPdiv p {
-    width: 375px;
-  }
-}
-@media screen and (max-width: 500px) {
-  section .cardrow .card {
-    width: 375px;
-  }
-  section .cardrow2 .card {
-    width: 375px;
-  }
-}
-@media screen and (max-width: 430px) {
-  main {
-    padding-left: 0;
-  }
-}
 @media screen and (max-width: 1215px) {
   footer {
     grid-template-areas: "ft2" "ft1";
@@ -913,6 +942,11 @@ footer .ft2 .message .inflex button:hover {
   }
   footer .ft2 .firstname .inputflex {
     justify-self: flex-end;
+  }
+}
+@media screen and (max-width: 600px) {
+  .lstsectio {
+    align-items: center;
   }
 }
 @media screen and (max-width: 510px) {
@@ -1024,4 +1058,4 @@ footer .ft2 .message .inflex button:hover {
     width: 350px;
     justify-self: start;
   }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=strategy.css.map */
