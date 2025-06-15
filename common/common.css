@@ -508,7 +508,7 @@ section .sc1maindiv .calk button:hover {
 }
 @media screen and (max-width: 800px) {
   header .hdr2 {
-    padding-right: 50px;
+    padding-right: 10px;
   }
   header .hdr2 nav {
     display: none;
