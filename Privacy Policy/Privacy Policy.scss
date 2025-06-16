@@ -1,0 +1,915 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none; scroll-behavior: smooth;
+}
+
+
+@mixin mainColorFont {
+    color: #0732EF;
+}
+@mixin mainColorBck{
+    background-color: #0732EF;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;top: 0;right: 0;left: 0;
+    height: 120px; padding: 0px 70px;background-color: white;
+    display: flex;z-index: 200;
+
+    div{
+        display: flex;;width: 50%;
+        align-items: center;height: 100%;
+    }
+
+    .hdr1{
+        svg{
+            margin-top: -15px;
+        }
+        gap: 10px;;
+        p{
+             font-weight: bold;@include mainColorFont();
+             font-size: 23px;
+        }
+    }
+
+    .hdr2{justify-content: end;
+        nav{
+            ul{
+                display: flex;gap: 30px;
+                @include mainColorFont();
+                font-size: 21px;
+                
+                label{display: flex;
+                       .hdr-log{
+                    &:hover{
+                        opacity: 0.7 !important;
+                        cursor: pointer;
+                         @include mainColorFont();
+                font-size: 21px;
+                    }
+                }
+                }
+             
+                li{
+                    &:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    i{
+                        font-size: 25px;
+                    }
+
+                   
+                  
+                }
+             
+              
+            }
+        }
+        .check:checked + label > .lineDiv > .line2{
+            display: none;
+        }
+        .check:checked + label > .lineDiv > .line1{
+            transform: rotate(45deg) translate(9px);
+            transition: 0.3s;
+        }
+        .check:checked + label > .lineDiv > .line3{
+            transform: rotate(-45deg) translate(9px);
+            transition: 0.3s;
+        }
+        .check:checked ~ .navdi{
+            display: flex;
+        }
+        .check:checked ~ .navdi > ul{
+            display: flex;
+        }
+
+        .check2:checked + label > .hdr-log{
+            display: none;
+        }
+        .check2:checked + label > .sam{
+            display: flex;
+        }
+       .check2:checked ~ .loginform{
+        display: flex;
+       }
+
+        .login-line1{
+            display: none;
+                 width: 40px;
+            height: 3.5px;
+            background-color: #0732EF;
+            transform: rotate(-45deg) translate(29px)
+             translateY(29px);
+             
+
+        }
+        .login-line2{
+            display: none;
+            width: 40px;
+            height: 3.5px;
+            transform: rotate(45deg) ;
+            background-color: #0732EF;
+           
+        }
+
+        .loginform{
+            display: none;
+               width: 100%;
+            height: 100vh;
+            position: fixed;
+            left: 0;bottom: 0;
+            justify-content: center;
+            background-color: rgb(249, 246, 246);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            display: none;
+
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;align-items: flex-start;
+
+
+                 button{
+                 width: 250px;
+            padding: 10px 20px;
+            border: solid 0.5px white;
+            border-radius: 50px;@include mainColorBck();
+            font-size: 20px;color: white;transition: 0.3s ease-in-out;
+            margin-top: 5px;
+
+            &:hover{
+                background-color: rgb(217, 251, 153);
+                @include mainColorFont();
+                cursor: pointer;
+            }
+            }
+
+                .textareadiv{
+                    display: flex;flex-direction: column;
+                    align-items: flex-start;width: 100%;
+                    gap: 20px;
+
+                    textarea{
+                        resize: none;
+                         background-color: transparent;
+                            border: solid 1px #0732EF;
+                            border-radius: 30px;
+                            padding: 5px 15px;
+                             caret-color: #0732EF;
+                            color: #0732EF;
+                            font-size: 19px;
+                            width: 100%;
+                            height: 150px;
+                    }
+                }
+
+                .formrow{
+                    display: flex;
+                    gap: 20px;
+
+                    .inputdiv{
+                        display: flex;flex-direction: column;
+                        gap: 10px;width: 300px;
+
+                        p{
+                            align-self: flex-start;
+                        }
+
+                        input{
+                            background-color: transparent;
+                            border: solid 1px #0732EF;
+                            border-radius: 30px;
+                            padding: 5px 15px;
+                            width: 300px;
+                            height: 40px;
+                            caret-color: #0732EF;
+                            color: #0732EF;
+                            font-size: 19px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        .check{
+             display: none;
+        }
+           
+          .check2{
+                        display: none !important;
+                    }
+
+                    
+
+        
+        label{
+            display:  none;z-index: 5;
+
+            .lineDiv{
+                display: flex;flex-direction:column;
+                gap: 8px;
+
+                div{
+                    width: 40px;height: 4px;
+                    @include mainColorBck();border-radius: 20px;
+                }
+            }
+        }
+
+        .navdi{
+            width: 100%;
+            height: 200vh;
+            position: fixed;
+            left: 0;bottom: 0;
+            top: 120px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            display: none;
+
+            ul{
+                    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;display: none;
+    @include mainColorFont();
+    font-size: 25px;
+
+
+    li{ @include mainColorFont();
+        &:hover{
+            cursor: pointer;
+        }
+    }
+            }
+
+
+            .igdv{
+                display: flex;gap: 5px;height: 30px;
+            }
+        }
+    }
+}
+
+main{
+    width: 100%;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 170px;
+    gap: 65px;
+    margin-bottom: 50px;
+
+    .tmrow{
+        display: flex;
+        width: 90%;
+
+        h1{
+            @include mainColorFont();
+            font-size: 75px;
+            font-weight: bold;
+        }
+    }
+
+    .paragraphdiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p{
+            width: 830px;
+            @include mainColorFont();
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.5px;;
+
+        }
+    }
+}
+
+@media screen and (max-width: 830px){
+    main{
+        // align-items: flex-start;
+        .paragraphdiv{
+            p{
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    main{align-items: flex-start;
+
+        .tmrow{
+            h1{
+                font-size: 55px;;
+            }
+        }
+        .paragraphdiv{
+            p{
+                width: 375px
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1140px){
+    
+    header{
+        padding: 0px 30px;
+
+
+        .hdr1{
+            width: 30%
+        }
+        .hdr2{width: 70%;
+            nav{
+                ul{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    
+    header{
+        .hdr2{padding-right: 10px;
+
+            nav{
+                display: none; 
+            }
+            label{
+                display: flex;
+            }
+        }
+    }
+}
+
+
+
+footer{
+    @include mainColorBck();
+    width: 100%;
+    height: 800px;
+    margin-top: 0px;
+    display: grid;
+    grid-template-areas:
+     'ft1 ft2';
+
+   
+
+     .ft1{
+        grid-area: ft1;
+        display: grid;
+        grid-template-areas: 
+        'k k'
+        'r d'
+        's f'
+        'e e';
+       
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        .keeprising{
+            grid-area: k;
+           align-self: center;
+           justify-self: center;
+           width: 500px;
+          
+
+            p{
+                font-weight: bold;
+                font-size: 77px;color: white;
+            }
+           
+        }
+        .reach{
+            grid-area: r;
+            justify-self: flex-end;
+            margin-left: -50px;
+            align-self: center;
+
+            .flexcolumn{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                width: 300px;
+
+                .rch{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+                .clmn{
+                    display: flex;flex-direction: column;
+
+                    p{
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .address{
+            grid-area: d;
+            justify-self: start;
+            
+            align-self: center;
+            .dflex{
+                display: flex;
+                height: 110px;
+                align-items: flex-end;
+
+                 p{
+                color: white;
+                font-size: 20px;
+                width: 200px;
+            }
+            }
+
+           
+        }
+        .socials{
+            grid-area: s;
+            justify-self: end;
+
+            .socialsflex{
+                display: flex;flex-direction: column;
+                gap: 5px;
+                width: 300px;
+                
+                
+                p{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+         .faq{
+                grid-area: f;
+                ;
+                
+
+                .faqflex{
+                    display: flex;flex-direction: column;
+                   
+                    
+
+
+                    p{
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .footerendp{
+                align-self: flex-end;
+                justify-self: center;
+                margin-bottom: 10px;
+                grid-area: e;
+                text-decoration: none !important;
+                
+                
+                a{
+                    text-decoration: none;;
+                    
+                }
+                p{
+                    color: white;
+                    font-weight: 600;
+                    font-size: 15px;
+                    
+
+                    span{
+                        text-decoration: underline;
+                        
+                    }
+                }
+            }
+     }
+
+     .ft2{
+        grid-area: ft2;
+        display: grid;
+        gap: 25px;
+        grid-template-areas: 
+        'sp sp sp sp sp sp'
+        'fn fn fn ln ln ln'
+        'em em em cm cm cm'
+        'ms ms ms ms ms ms';
+        width: 300px;
+
+        .space{
+            grid-area: sp;
+             align-self: center;
+           justify-self: center;
+           width: 500px;
+          
+
+            p{display: none;
+                font-weight: bold;
+                font-size: 77px;color: white;
+            }
+               
+        }
+
+        .firstname{
+            grid-area: fn;
+            align-self: flex-end;
+            
+
+            .inputflex{
+                display: flex;flex-direction: column;
+                gap: 30px;
+                height: 85%;
+                justify-content: flex-end;
+                margin-bottom: 30px;
+                
+                p{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 23px;
+                }
+            }
+
+         
+
+                .inflex{
+                    display: flex;flex-direction: column;
+                    gap: 10px;
+
+                    label{
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+
+                    input{
+                        background-color: transparent;
+                        border: solid white 0.6px;
+                        border-radius: 30px;
+                        padding: 0px 20px;
+                        width: 240px;
+                        height: 42px;
+                           color: white;
+                        caret-color: white;
+                        font-size: 16px;
+                    }
+                }
+            
+        }
+
+        .lastname{
+            grid-area: ln;
+            align-self: flex-end;
+
+            .inflex{
+                  display: flex;flex-direction: column;
+                    gap: 10px;
+
+                      label{
+                 color: white;
+                        font-size: 18px;
+                        font-weight: 100;
+            }
+            input{
+                       background-color: transparent;
+                        border: solid white 0.6px;
+                        border-radius: 30px;
+                        padding: 0px 20px;
+                        width: 240px;
+                        height: 42px;
+                        color: white;
+                        caret-color: white;
+                        font-size: 16px;
+            }
+            }
+
+          
+        }
+
+        .email{
+            grid-area: em;
+
+            .inflex{
+                  display: flex;flex-direction: column;
+                    gap: 10px;
+
+                      label{
+                 color: white;
+                        font-size: 18px;
+                        font-weight: 100;
+            }
+            input{
+                       background-color: transparent;
+                        border: solid white 0.6px;
+                        border-radius: 30px;
+                        padding: 0px 20px;
+                        width: 240px;
+                        height: 42px;
+                           color: white;
+                        caret-color: white;
+                        font-size: 16px;
+            }
+            }
+        }
+
+        .company{
+            grid-area: cm;
+             .inflex{
+                  display: flex;flex-direction: column;
+                    gap: 10px;
+
+                      label{
+                 color: white;
+                        font-size: 18px;
+                        font-weight: 100;
+            }
+            input{
+                       background-color: transparent;
+                        border: solid white 0.6px;
+                        border-radius: 30px;
+                        padding: 0px 20px;
+                        width: 240px;
+                        height: 42px;
+                           color: white;
+                        caret-color: white;
+                        font-size: 16px;
+            }
+            }
+            
+        }
+
+        .message{
+            grid-area: ms;
+
+            .inflex{
+                  display: flex;flex-direction: column;
+                    gap: 10px;
+                    margin-top: -100px;
+
+                      label{
+                 color: white;
+                        font-size: 18px;
+                        font-weight: 100;
+            }
+            textarea{
+                       background-color: transparent;
+                        border: solid white 0.6px;
+                        border-radius: 20px;
+                        padding: 0px 20px;
+                        width: 505px;
+                        height: 100px;
+                           color: white;
+                        caret-color: white;
+                        font-size: 16px;
+                        resize: none;
+                        
+            }
+            button{
+                 width: 250px;
+            padding: 10px 20px;
+            border: solid 0.5px white;
+            border-radius: 50px;background-color: transparent;
+            font-size: 20px;color: white;transition: 0.3s ease-in-out;
+            margin-top: 5px;
+
+            &:hover{
+                background-color: rgb(217, 251, 153);
+                @include mainColorFont();
+                cursor: pointer;
+            }
+            }
+            }
+        }
+     }
+}
+
+@media screen and (max-width: 1215px){
+    footer{
+        grid-template-areas: 
+        'ft2'
+        'ft1';
+        height: 1200px;;
+
+        .ft1{
+            .keeprising{
+                p{
+                    display: none;
+                }
+            }
+        }
+        .ft2{
+            width: 100%;
+            .space{
+                justify-self: flex-start;
+                p{
+                    display: flex;
+                    
+                }
+            }
+            .message{
+                .inflex{
+                    margin-top: 0;
+                    justify-self: center;
+                }
+            }
+            .company{
+                .inflex{
+                    margin-top: 0;
+                }
+            }
+            .email{
+                .inflex{
+                    justify-self: flex-end;
+                }
+            }
+            .firstname{
+                .inflex{
+                    justify-self: flex-end;
+                }
+
+                .inputflex{
+                    justify-self: flex-end;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .lstsectio{
+       align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 510px){
+    footer{
+        .ft2{
+            width: 100px;
+            grid-template-areas: 
+            'sp'
+            'fn'
+            'ln'
+            'em'
+            'cm'
+            'ms';
+            padding-left: 5px;
+
+            .firstname{
+                justify-self: flex-start;
+                
+                width: 85%;
+                
+
+                .inflex{
+                    width: 100%;
+
+                    input{
+                        width: 350px;
+                    }
+                }
+            }
+
+            .email{
+                justify-self: flex-start;
+                 width: 85%;
+
+                 .inflex{
+                    width: 100%;
+
+                    input{
+                        width: 350px;
+                    }
+                }
+            }
+            .lastname{
+                 justify-self: flex-start;
+                 width: 85%;
+                 
+
+                 .inflex{
+                    width: 100%;
+                    
+
+                    input{
+                        width: 350px;
+                    }
+                }
+            }
+            .message{
+                 justify-self: flex-start;
+                 width: 85%;
+                 
+
+                 .inflex{
+                    width: 100%;
+
+                    textarea{
+                        width: 350px;
+                    }
+                }
+            }
+            .company{
+                 justify-self: flex-start;
+                 width: 85%;
+
+                 .inflex{
+                    width: 100%;
+
+                    input{
+                        width: 350px;
+                    }
+                }
+            }
+            .space{
+                width: 300px;
+                p{
+                    font-size: 45px;
+                    width: 300px;
+                }
+            }
+        }
+        .ft1{
+            width: 100px;
+            .reach{
+                margin-left: 0;
+                
+                width: 100%;
+                .flexcolumn{
+                    width: 100%;
+                    justify-self: flex-start;
+                    
+                    .clmn{
+                        
+                        p{
+                        font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .address{
+                
+                .dflex{
+                    margin-left: -100px;
+                    
+                    p{
+                        font-size: 17px;
+                        width: 100px;
+                        
+                    }
+                }
+            }
+            .socials{
+                width: 100%;
+                .socialsflex{align-self: flex-start;
+                    width: 100%;
+                    a{
+                        p{
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .faq{
+                width: 0%;
+                .faqflex{
+                    
+                    margin-left: -100px;
+                    width: 125px;
+
+                    p{
+                        font-size: 17px;
+                    }
+
+                   
+                }
+            }
+            .footerendp{
+                
+              align-self: flex-end;width: 350px;
+                justify-self: start;
+            }
+
+        }
+    }
+}
