@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding-bottom: 200px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 120px;
+  padding: 0px 70px;
+  background-color: white;
+  display: flex;
+  z-index: 200;
+}
+header div {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  height: 100%;
+}
+header .hdr1 {
+  gap: 10px;
+}
+header .hdr1 svg {
+  margin-top: -15px;
+}
+header .hdr1 p {
+  font-weight: bold;
+  color: #0732EF;
+  font-size: 23px;
+}
+header .hdr2 {
+  justify-content: end;
+}
+header .hdr2 nav ul {
+  display: flex;
+  gap: 30px;
+  color: #0732EF;
+  font-size: 21px;
+}
+header .hdr2 nav ul label {
+  display: flex;
+}
+header .hdr2 nav ul label .hdr-log:hover {
+  opacity: 0.7 !important;
+  cursor: pointer;
+  color: #0732EF;
+  font-size: 21px;
+}
+header .hdr2 nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+header .hdr2 nav ul li i {
+  font-size: 25px;
+}
+header .hdr2 .check:checked + label > .lineDiv > .line2 {
+  display: none;
+}
+header .hdr2 .check:checked + label > .lineDiv > .line1 {
+  transform: rotate(45deg) translate(9px);
+  transition: 0.3s;
+}
+header .hdr2 .check:checked + label > .lineDiv > .line3 {
+  transform: rotate(-45deg) translate(9px);
+  transition: 0.3s;
+}
+header .hdr2 .check:checked ~ .navdi {
+  display: flex;
+}
+header .hdr2 .check:checked ~ .navdi > ul {
+  display: flex;
+}
+header .hdr2 .check2:checked + label > .hdr-log {
+  display: none;
+}
+header .hdr2 .check2:checked + label > .sam {
+  display: flex;
+}
+header .hdr2 .check2:checked ~ .loginform {
+  display: flex;
+}
+header .hdr2 .login-line1 {
+  display: none;
+  width: 40px;
+  height: 3.5px;
+  background-color: #0732EF;
+  transform: rotate(-45deg) translate(29px) translateY(29px);
+}
+header .hdr2 .login-line2 {
+  display: none;
+  width: 40px;
+  height: 3.5px;
+  transform: rotate(45deg);
+  background-color: #0732EF;
+}
+header .hdr2 .loginform {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  background-color: rgb(249, 246, 246);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+header .hdr2 .loginform form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+header .hdr2 .loginform form button {
+  width: 250px;
+  padding: 10px 20px;
+  border: solid 0.5px white;
+  border-radius: 50px;
+  background-color: #0732EF;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin-top: 5px;
+}
+header .hdr2 .loginform form button:hover {
+  background-color: rgb(217, 251, 153);
+  color: #0732EF;
+  cursor: pointer;
+}
+header .hdr2 .loginform form .textareadiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+header .hdr2 .loginform form .textareadiv textarea {
+  resize: none;
+  background-color: transparent;
+  border: solid 1px #0732EF;
+  border-radius: 30px;
+  padding: 5px 15px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 19px;
+  width: 100%;
+  height: 150px;
+}
+header .hdr2 .loginform form .formrow {
+  display: flex;
+  gap: 20px;
+}
+header .hdr2 .loginform form .formrow .inputdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+header .hdr2 .loginform form .formrow .inputdiv p {
+  align-self: flex-start;
+}
+header .hdr2 .loginform form .formrow .inputdiv input {
+  background-color: transparent;
+  border: solid 1px #0732EF;
+  border-radius: 30px;
+  padding: 5px 15px;
+  width: 300px;
+  height: 40px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 19px;
+}
+header .hdr2 .check {
+  display: none;
+}
+header .hdr2 .check2 {
+  display: none !important;
+}
+header .hdr2 label {
+  display: none;
+  z-index: 5;
+}
+header .hdr2 label .lineDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+header .hdr2 label .lineDiv div {
+  width: 40px;
+  height: 4px;
+  background-color: #0732EF;
+  border-radius: 20px;
+}
+header .hdr2 .navdi {
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 120px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+header .hdr2 .navdi ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
+  color: #0732EF;
+  font-size: 25px;
+}
+header .hdr2 .navdi ul li {
+  color: #0732EF;
+}
+header .hdr2 .navdi ul li:hover {
+  cursor: pointer;
+}
+header .hdr2 .navdi .igdv {
+  display: flex;
+  gap: 5px;
+  height: 30px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 190px;
+}
+main .formmaindiv {
+  display: flex;
+  flex-direction: column;
+  width: 1050px;
+  height: 650px;
+  gap: 50px;
+}
+main .formmaindiv .topSection {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .formmaindiv .topSection .idk p {
+  color: #0732EF;
+  font-weight: 500;
+  font-size: 16px;
+}
+main .formmaindiv .topSection .idk:hover p {
+  opacity: 0.7;
+  cursor: pointer;
+}
+main .formmaindiv .topSection .idk:hover i {
+  opacity: 0.7;
+  cursor: pointer;
+}
+main .formmaindiv .topSection p {
+  color: #0732EF;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+main .formmaindiv form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main .formmaindiv form .formleft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 65%;
+  height: 100%;
+}
+main .formmaindiv form .formleft .client {
+  color: #0732EF;
+  font-size: 25px;
+}
+main .formmaindiv form .formleft .haveacc {
+  display: flex;
+  width: 100%;
+  background-color: rgba(7, 50, 239, 0.05);
+  border-radius: 30px;
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+}
+main .formmaindiv form .formleft .haveacc p {
+  color: #0732EF;
+  font-size: 14px;
+}
+main .formmaindiv form .formleft .haveacc p span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.7;
+}
+main .formmaindiv form .formleft .inputrow {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
+main .formmaindiv form .formleft .inputrow .inputcolumn {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+main .formmaindiv form .formleft .inputrow .inputcolumn label {
+  color: #0732EF;
+  font-size: 17px;
+}
+main .formmaindiv form .formleft .inputrow .inputcolumn input {
+  border: solid 0.6px #0732EF;
+  border-radius: 30px;
+  height: 40px;
+  width: 100%;
+  padding: 0px 20px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 17px;
+}
+main .formmaindiv form .formleft .inputrow .inputcolumn select {
+  border: solid 0.6px #0732EF;
+  border-radius: 30px;
+  height: 40px;
+  width: 100%;
+  padding: 0px 20px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 17px;
+}
+main .formmaindiv form .formright {
+  width: 35%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  header {
+    padding: 0px 30px;
+  }
+  header .hdr1 {
+    width: 30%;
+  }
+  header .hdr2 {
+    width: 70%;
+  }
+  header .hdr2 nav ul {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .hdr2 {
+    padding-right: 10px;
+  }
+  header .hdr2 nav {
+    display: none;
+  }
+  header .hdr2 label {
+    display: flex;
+  }
+}/*# sourceMappingURL=BookFom.css.map */

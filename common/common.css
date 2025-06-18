@@ -481,7 +481,7 @@ section .sc1maindiv .calk button:hover {
     width: 100%;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild {
-    height: 100px;
+    height: 70px;
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild p, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild p {
     font-size: 25px;
