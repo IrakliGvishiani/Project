@@ -5,6 +5,9 @@
     list-style: none; scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden !important;
+}
 
 @mixin mainColorFont {
     color: #0732EF;
@@ -933,7 +936,9 @@ main{
                 .faqflex{
                     display: flex;flex-direction: column;
                    
-                    
+                      a{
+                        width: 180px;
+                    }
 
 
                     p{

@@ -9,7 +9,9 @@ a{
     
 }
 
-
+body{
+    overflow-x: hidden !important;
+}
 // body{
 //     padding-bottom: 200px;
    
@@ -628,7 +630,9 @@ footer{
                     display: flex;flex-direction: column;
                    
                     
-
+                     a{
+                        width: 180px;
+                    }
 
                     p{
                         color: white;

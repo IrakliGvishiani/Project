@@ -5,6 +5,9 @@
     list-style: none; scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden !important;
+}
 
 @mixin mainColorFont {
     color: #0732EF;
@@ -14,8 +17,12 @@
 }
 a{
     text-decoration: none !important;
+    margin: 0 !important;
 }
 
+p{
+    margin: 0 !important;
+}
 header{
     position: fixed;top: 0;right: 0;left: 0;
     height: 120px; padding: 0px 70px;background-color: white;
@@ -435,7 +442,9 @@ footer{
                     display: flex;flex-direction: column;
                    
                     
-
+                   a{
+                        width: 180px;
+                    }
 
                     p{
                         color: white;

@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -714,6 +718,9 @@ footer .ft1 .faq {
 footer .ft1 .faq .faqflex {
   display: flex;
   flex-direction: column;
+}
+footer .ft1 .faq .faqflex a {
+  width: 120px;
 }
 footer .ft1 .faq .faqflex p {
   color: white;

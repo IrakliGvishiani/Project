@@ -117,11 +117,14 @@ footer{
                     display: flex;flex-direction: column;
                    
                     
-
+                    a{
+                        width: 180px;
+                    }
 
                     p{
                         color: white;
                         font-size: 20px;
+                        
                     }
                 }
             }
@@ -541,8 +544,12 @@ footer{
                     margin-left: -100px;
                     width: 125px;
 
+                    a{
+                        width: 120px;
+                    }
                    p{
                     font-size: 17px;
+                    
                    }
                 }
             }
@@ -555,3 +562,16 @@ footer{
         }
     }
 }
+// @media screen and (max-width: 430px){
+//     footer{
+//         .ft1{
+//             .faq{
+//                 .faqflex{
+//                     a{
+
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

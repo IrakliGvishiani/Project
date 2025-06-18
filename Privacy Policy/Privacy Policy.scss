@@ -6,6 +6,10 @@
 }
 
 
+body{
+    overflow-x: hidden !important;
+}
+
 @mixin mainColorFont {
     color: #0732EF;
 }
@@ -473,7 +477,9 @@ footer{
                     display: flex;flex-direction: column;
                    
                     
-
+                   a{
+                        width: 180px;
+                    }
 
                     p{
                         color: white;

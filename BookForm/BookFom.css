@@ -8,7 +8,15 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+p {
+  margin: 0 !important;
 }
 
 body {
