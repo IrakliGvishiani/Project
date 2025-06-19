@@ -49,6 +49,9 @@
   font-size: 20px;
   width: 85%;
 }
+.sec2 .servicesDiv a {
+  width: 200px;
+}
 .sec2 .servicesDiv button {
   width: 280px;
   padding: 15px 30px;

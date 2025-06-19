@@ -275,6 +275,9 @@ main .mainChild1 .butH1 h1 {
   font-size: 75px;
   width: 60%;
 }
+main .mainChild1 .butH1 a {
+  width: 200px;
+}
 main .mainChild1 .butH1 button {
   width: 300px;
   border: #0732EF solid 0.5px;
@@ -411,6 +414,9 @@ section .sc1maindiv .calk .clk2 .paragr {
   width: 85%;
   letter-spacing: 1px;
   line-height: 23px;
+}
+section .sc1maindiv .calk a {
+  width: 200px;
 }
 section .sc1maindiv .calk button {
   width: 300px;

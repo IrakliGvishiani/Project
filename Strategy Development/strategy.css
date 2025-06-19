@@ -720,7 +720,7 @@ footer .ft1 .faq .faqflex {
   flex-direction: column;
 }
 footer .ft1 .faq .faqflex a {
-  width: 120px;
+  width: 180px;
 }
 footer .ft1 .faq .faqflex p {
   color: white;
@@ -1056,6 +1056,9 @@ footer .ft2 .message .inflex button:hover {
   footer .ft1 .faq .faqflex {
     margin-left: -100px;
     width: 125px;
+  }
+  footer .ft1 .faq .faqflex a {
+    width: 120px;
   }
   footer .ft1 .faq .faqflex p {
     font-size: 17px;

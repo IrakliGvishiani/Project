@@ -1102,6 +1102,9 @@ footer .ft2 .message .inflex button:hover {
     margin-left: -100px;
     width: 125px;
   }
+  footer .ft1 .faq .faqflex a {
+    width: 120px;
+  }
   footer .ft1 .faq .faqflex p {
     font-size: 17px;
   }
