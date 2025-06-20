@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+main .loginform {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .loginform form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+main .loginform form button {
+  width: 250px;
+  padding: 10px 20px;
+  border: solid 0.5px white;
+  border-radius: 50px;
+  background-color: #0732EF;
+  font-size: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+  margin-top: 5px;
+}
+main .loginform form button:hover {
+  background-color: rgb(217, 251, 153);
+  color: #0732EF;
+  cursor: pointer;
+}
+main .loginform form .textareadiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+main .loginform form .textareadiv p {
+  color: #0732EF;
+}
+main .loginform form .textareadiv textarea {
+  resize: none;
+  background-color: transparent;
+  border: solid 1px #0732EF;
+  border-radius: 30px;
+  padding: 5px 15px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 19px;
+  width: 100%;
+  height: 150px;
+}
+main .loginform form .formrow {
+  display: flex;
+  gap: 20px;
+}
+main .loginform form .formrow .inputdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+main .loginform form .formrow .inputdiv p {
+  align-self: flex-start;
+  color: #0732EF;
+}
+main .loginform form .formrow .inputdiv input {
+  background-color: transparent;
+  border: solid 1px #0732EF;
+  border-radius: 30px;
+  padding: 5px 15px;
+  width: 300px;
+  height: 40px;
+  caret-color: #0732EF;
+  color: #0732EF;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 625px) {
+  main {
+    padding-top: 100px;
+  }
+  main .loginform form {
+    width: 100%;
+  }
+  main .loginform form .formrow {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Login.css.map */
