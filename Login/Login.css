@@ -38,6 +38,11 @@ main .loginform form {
   gap: 30px;
   align-items: flex-start;
 }
+main .loginform form h1 {
+  color: #0732EF;
+  font-size: 50px;
+  font-weight: bold;
+}
 main .loginform form button {
   width: 250px;
   padding: 10px 20px;
@@ -104,7 +109,7 @@ main .loginform form .formrow .inputdiv input {
 
 @media screen and (max-width: 625px) {
   main {
-    padding-top: 100px;
+    padding-top: 150px;
   }
   main .loginform form {
     width: 100%;

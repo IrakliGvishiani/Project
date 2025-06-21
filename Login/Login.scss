@@ -56,6 +56,12 @@ main{
                 flex-direction: column;
                 gap: 30px;align-items: flex-start;
 
+                h1{
+                    @include mainColorFont();
+                    font-size: 50px;
+                    font-weight: bold;
+                }
+
 
                  button{
                  width: 250px;
@@ -131,7 +137,7 @@ main{
 
 
 @media screen and (max-width: 625px){
-    main{padding-top: 100px;
+    main{padding-top: 150px;
         .loginform{
             form{width: 100%;
                 .formrow{
