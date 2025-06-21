@@ -170,6 +170,7 @@ footer .ft2 .firstname .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .lastname {
   grid-area: ln;
@@ -195,6 +196,7 @@ footer .ft2 .lastname .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .email {
   grid-area: em;
@@ -219,6 +221,7 @@ footer .ft2 .email .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .company {
   grid-area: cm;
@@ -243,6 +246,7 @@ footer .ft2 .company .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .message {
   grid-area: ms;
@@ -269,6 +273,7 @@ footer .ft2 .message .inflex textarea {
   caret-color: white;
   font-size: 16px;
   resize: none;
+  outline: none;
 }
 footer .ft2 .message .inflex button {
   width: 250px;

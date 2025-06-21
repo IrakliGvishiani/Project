@@ -59,8 +59,31 @@ header{
                 }
              
                 li{
+
+                      a{ position: relative;
+                    overflow: hidden;
+
+                    &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #0732EF;
+                    left: 0;
+                    bottom: -5px;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover::after {
+                    transform: scaleX(1);
+                    }
+
+                    }
+
                     &:hover{
-                        text-decoration: underline;
+                        
                         cursor: pointer;
                     }
                     i{
@@ -172,6 +195,7 @@ header{
                             font-size: 19px;
                             width: 100%;
                             height: 150px;
+                            outline: none;
                     }
                 }
 
@@ -197,6 +221,7 @@ header{
                             caret-color: #0732EF;
                             color: #0732EF;
                             font-size: 19px;
+                            outline: none;
                         }
                         
                     }
@@ -578,6 +603,7 @@ footer{
                            color: white;
                         caret-color: white;
                         font-size: 16px;
+                        outline: none;
                     }
                 }
             
@@ -606,6 +632,7 @@ footer{
                         color: white;
                         caret-color: white;
                         font-size: 16px;
+                        outline: none;
             }
             }
 
@@ -634,6 +661,7 @@ footer{
                            color: white;
                         caret-color: white;
                         font-size: 16px;
+                        outline: none;
             }
             }
         }
@@ -659,6 +687,7 @@ footer{
                            color: white;
                         caret-color: white;
                         font-size: 16px;
+                        outline: none;
             }
             }
             
@@ -688,6 +717,7 @@ footer{
                         caret-color: white;
                         font-size: 16px;
                         resize: none;
+                        outline: none;
                         
             }
             button{

@@ -37,6 +37,7 @@ main .loginform form {
   flex-direction: column;
   gap: 30px;
   align-items: flex-start;
+  padding-left: 20px;
 }
 main .loginform form h1 {
   color: #0732EF;
@@ -78,8 +79,9 @@ main .loginform form .textareadiv textarea {
   caret-color: #0732EF;
   color: #0732EF;
   font-size: 19px;
-  width: 100%;
+  width: 95%;
   height: 150px;
+  outline: none;
 }
 main .loginform form .formrow {
   display: flex;
@@ -105,6 +107,7 @@ main .loginform form .formrow .inputdiv input {
   caret-color: #0732EF;
   color: #0732EF;
   font-size: 19px;
+  outline: none;
 }
 
 @media screen and (max-width: 625px) {

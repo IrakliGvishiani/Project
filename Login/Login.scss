@@ -55,6 +55,7 @@ main{
                 display: flex;
                 flex-direction: column;
                 gap: 30px;align-items: flex-start;
+                padding-left: 20px;
 
                 h1{
                     @include mainColorFont();
@@ -96,8 +97,9 @@ main{
                              caret-color: #0732EF;
                             color: #0732EF;
                             font-size: 19px;
-                            width: 100%;
+                            width: 95%;
                             height: 150px;
+                            outline: none;
                     }
                 }
 
@@ -124,6 +126,7 @@ main{
                             caret-color: #0732EF;
                             color: #0732EF;
                             font-size: 19px;
+                            outline: none;
                         }
                         
                     }

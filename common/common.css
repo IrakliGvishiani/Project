@@ -9,6 +9,7 @@
 
 body {
   overflow-x: hidden !important;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 a {
@@ -171,6 +172,7 @@ header .hdr2 .loginform form .textareadiv {
   gap: 20px;
 }
 header .hdr2 .loginform form .textareadiv textarea {
+  outline: none;
   resize: none;
   background-color: transparent;
   border: solid 1px #0732EF;
@@ -205,6 +207,7 @@ header .hdr2 .loginform form .formrow .inputdiv input {
   caret-color: #0732EF;
   color: #0732EF;
   font-size: 19px;
+  outline: none;
 }
 header .hdr2 .check {
   display: none;

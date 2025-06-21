@@ -9,6 +9,7 @@
 
 body{
     overflow-x: hidden !important;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 a{
@@ -197,6 +198,7 @@ header{
                     gap: 20px;
 
                     textarea{
+                        outline: none;
                         resize: none;
                          background-color: transparent;
                             border: solid 1px #0732EF;
@@ -232,6 +234,7 @@ header{
                             caret-color: #0732EF;
                             color: #0732EF;
                             font-size: 19px;
+                            outline: none;
                         }
                         
                     }

@@ -65,8 +65,26 @@ header .hdr2 nav ul label .hdr-log:hover {
   color: #0732EF;
   font-size: 21px;
 }
+header .hdr2 nav ul li a {
+  position: relative;
+  overflow: hidden;
+}
+header .hdr2 nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #0732EF;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+header .hdr2 nav ul li a:hover::after {
+  transform: scaleX(1);
+}
 header .hdr2 nav ul li:hover {
-  text-decoration: underline;
   cursor: pointer;
 }
 header .hdr2 nav ul li i {
@@ -166,6 +184,8 @@ header .hdr2 .loginform form .textareadiv textarea {
   font-size: 19px;
   width: 100%;
   height: 150px;
+  outline: none;
+  outline: none;
 }
 header .hdr2 .loginform form .formrow {
   display: flex;
@@ -190,6 +210,8 @@ header .hdr2 .loginform form .formrow .inputdiv input {
   caret-color: #0732EF;
   color: #0732EF;
   font-size: 19px;
+  outline: none;
+  outline: none;
 }
 header .hdr2 .check {
   display: none;
@@ -377,6 +399,7 @@ main .formmaindiv form .formright .bookdt {
   color: #0732EF;
   font-size: 23px;
   font-weight: 600;
+  width: 200px;
 }
 main .formmaindiv form .formright .linee {
   height: 1px;
@@ -586,6 +609,7 @@ footer .ft2 .firstname .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .lastname {
   grid-area: ln;
@@ -611,6 +635,7 @@ footer .ft2 .lastname .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .email {
   grid-area: em;
@@ -635,6 +660,7 @@ footer .ft2 .email .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .company {
   grid-area: cm;
@@ -659,6 +685,7 @@ footer .ft2 .company .inflex input {
   color: white;
   caret-color: white;
   font-size: 16px;
+  outline: none;
 }
 footer .ft2 .message {
   grid-area: ms;
@@ -685,6 +712,7 @@ footer .ft2 .message .inflex textarea {
   caret-color: white;
   font-size: 16px;
   resize: none;
+  outline: none;
 }
 footer .ft2 .message .inflex button {
   width: 250px;
@@ -735,7 +763,7 @@ footer .ft2 .message .inflex button:hover {
     align-items: center;
   }
   main .formmaindiv form .formright {
-    width: 30%;
+    width: 50%;
     align-items: center;
   }
   main .formmaindiv form .formright .linee {
