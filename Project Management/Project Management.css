@@ -11,6 +11,32 @@ body {
   overflow-x: hidden !important;
 }
 
+.scrollup {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.scrollup i {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  color: #0732EF;
+  background-color: #D9FB99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: 0.3s ease-in-out;
+}
+.scrollup i:hover {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -403,6 +429,27 @@ header .hdr1 {
 }
 header .hdr1 svg {
   margin-top: -15px;
+  transition: transform 0.3s ease-in-out;
+}
+header .hdr1 svg:hover {
+  animation: shake 1s 1;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 header .hdr1 p {
   font-weight: bold;
@@ -644,6 +691,16 @@ header .hdr2 .navdi .igdv {
   }
 }
 @media screen and (max-width: 800px) {
+  .scrollup {
+    right: 30px;
+    bottom: 30px;
+  }
+  .scrollup i {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    background-color: rgba(217, 251, 153, 0.8392156863);
+  }
   header .hdr2 {
     padding-right: 10px;
   }

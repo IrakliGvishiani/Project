@@ -38,6 +38,27 @@ header .hdr1 {
 }
 header .hdr1 svg {
   margin-top: -15px;
+  transition: transform 0.3s ease-in-out;
+}
+header .hdr1 svg:hover {
+  animation: shake 1s 1;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 header .hdr1 p {
   font-weight: bold;

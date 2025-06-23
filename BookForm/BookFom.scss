@@ -26,6 +26,35 @@ p{
     background-color: #0732EF;
 }
 
+.scrollup{
+    position: fixed;
+    right: 50px;
+    bottom: 50px
+    ;
+    ;display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        height: 60px;width: 60px;
+        border-radius: 50px;
+        @include mainColorFont();
+        background-color: #D9FB99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+        
+        
+    }
+}
+
 
 
 header{
@@ -41,7 +70,23 @@ header{
     .hdr1{
         svg{
             margin-top: -15px;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover{
+                animation: shake 1s 1;
+            }
+
         }
+
+                @keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+       
         gap: 10px;;
         p{
              font-weight: bold;@include mainColorFont();
@@ -963,7 +1008,7 @@ footer{
                     display: flex;
                     flex-direction: column;
 
-                    .inputcolumn{
+                    .inputcolumn{align-items: center;
 
                         input{
                             width: 400px !important;
@@ -994,6 +1039,17 @@ footer{
             label{
                 display: flex;
             }
+        }
+    }
+
+        .scrollup{
+        right: 30px;
+        bottom: 30px;
+
+        i{
+            width: 50px;height: 50px;
+            font-size: 25px;
+            background-color: #d9fb99d6;
         }
     }
 }
