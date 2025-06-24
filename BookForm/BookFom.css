@@ -522,7 +522,7 @@ footer .ft1 .reach {
 footer .ft1 .reach .flexcolumn {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   width: 300px;
 }
 footer .ft1 .reach .flexcolumn .rch {
@@ -537,6 +537,7 @@ footer .ft1 .reach .flexcolumn .clmn {
 footer .ft1 .reach .flexcolumn .clmn p {
   color: white;
   font-size: 20px;
+  height: 23px;
 }
 footer .ft1 .address {
   grid-area: d;
@@ -552,6 +553,7 @@ footer .ft1 .address .dflex p {
   color: white;
   font-size: 20px;
   width: 200px;
+  line-height: 19px;
 }
 footer .ft1 .socials {
   grid-area: s;
@@ -560,12 +562,14 @@ footer .ft1 .socials {
 footer .ft1 .socials .socialsflex {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0px;
   width: 300px;
 }
 footer .ft1 .socials .socialsflex p {
   color: white;
   font-size: 20px;
+  margin: 0;
+  height: 25px;
 }
 footer .ft1 .faq {
   grid-area: f;
@@ -580,6 +584,7 @@ footer .ft1 .faq .faqflex a {
 footer .ft1 .faq .faqflex p {
   color: white;
   font-size: 20px;
+  line-height: 19px;
 }
 footer .ft1 .footerendp {
   align-self: flex-end;

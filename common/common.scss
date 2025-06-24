@@ -754,6 +754,7 @@ section{
                     .elementsChild{
                         p{
                             font-size: 19px;
+                            
                         }
                     }
                     
@@ -775,7 +776,8 @@ section{
 @media screen and (max-width: 556px){
     main{
         .mainChild2{
-            top: 400px;
+            top: 450px;
+            right: 100px;;
         }
     }
 }
@@ -783,7 +785,7 @@ section{
 @media screen and (max-width: 510px){
     main{
 
-        .mainChild2{top: 400px;
+        .mainChild2{
             .damtanja{
                 width: 350px;
                 
@@ -819,7 +821,12 @@ section{
         .mainChild1{
             .mainElementsDiv{
                 .elementsDiv1, .elementsDiv2{
-                    width: 370px;height: 280px;
+                    width: 370px;height: 250px;
+
+                    .elementsChild{
+                        height: 50px;
+                        margin-top: 0;
+                    }
                 }
             }
         }

@@ -5,8 +5,7 @@
     list-style: none; scroll-behavior: smooth;
 }
 a{
-    text-decoration: none !important;
-    
+    text-decoration: none !important;  
 }
 body{
     overflow-x: hidden !important;
@@ -600,7 +599,7 @@ footer{
             .flexcolumn{
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: 20px;
                 width: 300px;
 
                 .rch{
@@ -615,6 +614,7 @@ footer{
                     p{
                         color: white;
                         font-size: 20px;
+                        height: 23px;
                     }
                 }
             }
@@ -633,6 +633,8 @@ footer{
                 color: white;
                 font-size: 20px;
                 width: 200px;
+                line-height: 19px;
+               
             }
             }
 
@@ -644,13 +646,16 @@ footer{
 
             .socialsflex{
                 display: flex;flex-direction: column;
-                gap: 5px;
+                gap: 0px;
                 width: 300px;
                 
                 
                 p{
                     color: white;
                     font-size: 20px;
+                   
+                    margin: 0;
+                    height: 25px;
                 }
             }
         }
@@ -670,6 +675,7 @@ footer{
                     p{
                         color: white;
                         font-size: 20px;
+                        line-height: 19px;
                     }
                 }
             }

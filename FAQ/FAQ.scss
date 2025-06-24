@@ -16,6 +16,8 @@ body{
     background-color: #0732EF;
 }
 
+
+
 .scrollup{
     position: fixed;
     right: 50px;
@@ -447,7 +449,7 @@ footer{
             .flexcolumn{
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: 20px;
                 width: 300px;
 
                 .rch{
@@ -462,6 +464,7 @@ footer{
                     p{
                         color: white;
                         font-size: 20px;
+                        height: 23px;
                     }
                 }
             }
@@ -480,6 +483,8 @@ footer{
                 color: white;
                 font-size: 20px;
                 width: 200px;
+                margin: 0;
+                line-height: 19px;
             }
             }
 
@@ -491,7 +496,7 @@ footer{
 
             .socialsflex{
                 display: flex;flex-direction: column;
-                gap: 5px;
+                gap: 0px;
                 width: 300px;
                 
                 
@@ -500,6 +505,7 @@ footer{
                     font-size: 20px;
                     width: 50px;
                     margin: 0;
+                    height: 20px;
                 }
             }
         }
@@ -519,6 +525,8 @@ footer{
                     p{
                         color: white;
                         font-size: 20px;
+                      
+                        line-height: 19px;
                     }
                 }
             }

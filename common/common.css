@@ -618,13 +618,11 @@ section .sc1maindiv .calk button:hover {
 }
 @media screen and (max-width: 556px) {
   main .mainChild2 {
-    top: 400px;
+    top: 450px;
+    right: 100px;
   }
 }
 @media screen and (max-width: 510px) {
-  main .mainChild2 {
-    top: 400px;
-  }
   main .mainChild2 .damtanja {
     width: 350px;
   }
@@ -647,7 +645,11 @@ section .sc1maindiv .calk button:hover {
   }
   main .mainChild1 .mainElementsDiv .elementsDiv1, main .mainChild1 .mainElementsDiv .elementsDiv2 {
     width: 370px;
-    height: 280px;
+    height: 250px;
+  }
+  main .mainChild1 .mainElementsDiv .elementsDiv1 .elementsChild, main .mainChild1 .mainElementsDiv .elementsDiv2 .elementsChild {
+    height: 50px;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 380px) {
