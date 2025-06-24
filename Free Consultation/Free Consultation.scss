@@ -1411,8 +1411,8 @@ main{
                 
                 width: 100%;
                 .flexcolumn{
-                    width: 100%;
-                    justify-self: flex-start;
+                    width: 70%;
+                    align-items: center;
                     
                     .clmn{
                         
@@ -1425,7 +1425,7 @@ main{
             .address{
                 
                 .dflex{
-                    margin-left: -100px;
+                    margin-left: -50px;
                     
                     p{
                         font-size: 17px;
@@ -1436,8 +1436,8 @@ main{
             }
             .socials{
                 width: 100%;
-                .socialsflex{align-self: flex-start;
-                    width: 100%;
+                .socialsflex{align-items: center;
+                    width: 60%;
                     a{
                         p{
                             font-size: 17px;
@@ -1449,7 +1449,7 @@ main{
                 width: 0%;
                 .faqflex{
                     
-                    margin-left: -100px;
+                    margin-left: -50px;
                     width: 125px;
 
                       a{
@@ -1469,6 +1469,22 @@ main{
                 justify-self: start;
             }
 
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    footer{
+        .ft1{
+          .address{
+            .dflex{
+                margin-left: -95px;
+            }
+          }
+          .faq{
+            .faqflex{
+                margin-left: -95px;
+            }
+          }
         }
     }
 }
