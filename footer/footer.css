@@ -31,7 +31,6 @@ footer .ft1 .keeprising p {
 footer .ft1 .reach {
   grid-area: r;
   justify-self: flex-end;
-  margin-left: -50px;
   align-self: center;
 }
 footer .ft1 .reach .flexcolumn {
@@ -402,14 +401,14 @@ footer .ft2 .message .inflex button:hover {
     width: 100%;
   }
   footer .ft1 .reach .flexcolumn {
-    width: 100%;
-    justify-self: flex-start;
+    width: 70%;
+    align-items: center;
   }
   footer .ft1 .reach .flexcolumn .clmn p {
     font-size: 17px;
   }
   footer .ft1 .address .dflex {
-    margin-left: -100px;
+    margin-left: -50px;
   }
   footer .ft1 .address .dflex p {
     font-size: 17px;
@@ -419,8 +418,8 @@ footer .ft2 .message .inflex button:hover {
     width: 100%;
   }
   footer .ft1 .socials .socialsflex {
-    align-self: flex-start;
-    width: 100%;
+    align-items: center;
+    width: 60%;
   }
   footer .ft1 .socials .socialsflex a p {
     font-size: 17px;
@@ -429,7 +428,7 @@ footer .ft2 .message .inflex button:hover {
     width: 0%;
   }
   footer .ft1 .faq .faqflex {
-    margin-left: -100px;
+    margin-left: -50px;
     width: 125px;
   }
   footer .ft1 .faq .faqflex a {
@@ -442,5 +441,13 @@ footer .ft2 .message .inflex button:hover {
     align-self: flex-end;
     width: 350px;
     justify-self: start;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .ft1 .address .dflex {
+    margin-left: -95px;
+  }
+  footer .ft1 .faq .faqflex {
+    margin-left: -95px;
   }
 }/*# sourceMappingURL=footer.css.map */

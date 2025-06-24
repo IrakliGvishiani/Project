@@ -16,6 +16,37 @@ body{
 @mixin mainColorBck{
     background-color: #0732EF;
 }
+
+.scrollup{
+    position: fixed;
+    right: 50px;
+    bottom: 50px
+    ;
+    ;display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    i{
+        height: 60px;width: 60px;
+        border-radius: 50px;
+        @include mainColorFont();
+        background-color: #D9FB99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+        
+        
+    }
+}
+
 a{
     text-decoration: none;
 }
@@ -768,6 +799,18 @@ a{
     }
 }
 @media screen and (max-width: 800px){
+
+    .scrollup{
+        right: 30px;
+        bottom: 30px;
+        
+
+        i{
+            width: 55px;height: 55px;
+            font-size: 25px;
+            background-color: #d9fb99d6;
+        }
+      }
     
     header{
         .hdr2{padding-right: 10px;
