@@ -633,7 +633,7 @@ footer{
                 color: white;
                 font-size: 20px;
                 width: 200px;
-                line-height: 19px;
+                line-height: 21px;
                
             }
             }
@@ -666,6 +666,7 @@ footer{
 
                 .faqflex{
                     display: flex;flex-direction: column;
+                    gap: 4px;
                    
                     
                      a{
